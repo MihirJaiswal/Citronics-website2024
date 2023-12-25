@@ -31,6 +31,7 @@ const productButtons = document.querySelectorAll(".eventSelected");
 const payment = document.querySelector(".payment");
 const close = document.querySelector(".close");
 const services = document.querySelectorAll(".service-info");
+const form = document.querySelector(".form");
 
 productButtons.forEach(button => {
   button.addEventListener("click", () => {
@@ -38,6 +39,7 @@ productButtons.forEach(button => {
     services.forEach(service => {
       service.style.filter = "blur(8px)";
     });
+    form.style.filter = "blur(8px)";
   });
 });
 
@@ -46,6 +48,8 @@ close.addEventListener("click", () => {
   services.forEach(service => {
     service.style.filter = "blur(0px)";
   });
+  form.style.filter = "blur(0px)";
+
 });
 
 
