@@ -87,7 +87,7 @@ Line.addEventListener("click", () => {
   eventdescription.innerHTML = "Line Follower: A line follower robot is designed to follow a line on a track. It can detect obstacles and avoid them."
   prizeMoney.innerHTML = "500"
   participationFees.innerHTML = "2000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/linefollower.jpg"
 })
 
 let Maze = document.querySelector("#Maze")
@@ -97,7 +97,7 @@ Maze.addEventListener("click", () => {
   eventdescription.innerHTML = "Maze Solver: A maze solver robot is designed to solve a maze. It can detect obstacles and avoid them."
   prizeMoney.innerHTML = "500"
   participationFees.innerHTML = "2000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/mazeSolver.jpg"
 })
 
 let Pick = document.querySelector("#Pick")
@@ -107,7 +107,7 @@ Pick.addEventListener("click", () => {
   eventdescription.innerHTML = "Pick Place: A pick and place robot is designed to pick and place objects on a table"
   prizeMoney.innerHTML = "500"
   participationFees.innerHTML = "2000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/pickPlace.jpg"
 })
 
 let Electronic = document.querySelector("#Electronic")
@@ -117,7 +117,7 @@ Electronic.addEventListener("click", () => {
   eventdescription.innerHTML = "Electronic Junk Yard: A electronic junk yard robot is designed to collect electronic junk."
   prizeMoney.innerHTML = "500"
   participationFees.innerHTML = "2000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/JunkYard.jpg"
 })
  
 
@@ -128,7 +128,7 @@ Code.addEventListener("click", () => {
   eventdescription.innerHTML = "Code Hunter: A tech-centric pursuit where skilled individuals solve intricate puzzles, hunt bugs, and crack codes."
   prizeMoney.innerHTML = "200"
   participationFees.innerHTML = "2000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/codehunter.jpeg"
 })
 
 let Quiz = document.querySelector("#Quiz")
@@ -138,7 +138,7 @@ Quiz.addEventListener("click", () => {
   eventdescription.innerHTML = "Quizohile: A quiz game that tests your knowledge."
   prizeMoney.innerHTML = "200"
   participationFees.innerHTML = "2000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/Quiz.jpg"
 })
  
 
@@ -150,7 +150,7 @@ Bug.addEventListener("click", () => {
   eventdescription.innerHTML = "Beat the Bug: A strategic challenge where participants work to outsmart and overcome digital glitches and obstacles."
   prizeMoney.innerHTML = "200"
   participationFees.innerHTML = "1000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/beatTheBug.jpg"
 })
 
 let Best = document.querySelector("#googler")
@@ -160,7 +160,7 @@ Best.addEventListener("click", () => {
   eventdescription.innerHTML = "Best Googler: A title awarded to individuals who excel in utilizing Google's vast resources to find precise information efficiently."
   prizeMoney.innerHTML = "500"
   participationFees.innerHTML = "3000"
-  eventImage.src = ""
+  eventImage.src = "assests/bestGoogler.jpg"
 })
 
 let Simon = document.querySelector("#Simon")
@@ -170,7 +170,7 @@ Simon.addEventListener("click", () => {
   eventdescription.innerHTML = "Simon Game: A memory game that tests your memory skills. "
   prizeMoney.innerHTML = "200"
   participationFees.innerHTML = "2000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/simonGame.jpg"
 })
 
 
@@ -181,7 +181,7 @@ jumble.addEventListener("click", () => {
   eventdescription.innerHTML = "Jumble Keys: A jumble keys game where participants work to solve puzzles."
   prizeMoney.innerHTML = "200"
   participationFees.innerHTML = "2000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/jumbleKeys.jpg"
 })
  
 
@@ -192,7 +192,7 @@ musical.addEventListener("click", () => {
   eventdescription.innerHTML = "Musical chairs: Whirling melodies guide the dance of fleeting seats, testing agility and rhythm in laughter-filled competition."
   prizeMoney.innerHTML = "100"
   participationFees.innerHTML = "400"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/musicalChairs.jpg"
 })
 
 let pass = document.querySelector("#pass")
@@ -202,7 +202,7 @@ pass.addEventListener("click", () => {
   eventdescription.innerHTML = "Pass the wires: A game where participants work to pass wires through wires."
   prizeMoney.innerHTML = "100"
   participationFees.innerHTML = "400"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/passTheRope.jpg"
 })
  
 
@@ -214,7 +214,7 @@ music.addEventListener("click", () => {
   eventdescription.innerHTML = "Players circle chairs, music plays, scramble for seats—fun, suspenseful, last one standing wins the round."
   prizeMoney.innerHTML = "300"
   participationFees.innerHTML = "900"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/musicVoice.jpg"
 })
 
 let booth = document.querySelector("#booth")
@@ -224,7 +224,7 @@ booth.addEventListener("click", () => {
   eventdescription.innerHTML = "Selfie booth: A trendy space to capture moments, with props, lights, and backdrops for personalized snapshots."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/selfieBooth.jpg"
 })
 
 let lips = document.querySelector("#lips")
@@ -234,7 +234,7 @@ lips.addEventListener("click", () => {
   eventdescription.innerHTML = "Lips Don't Lie: A captivating phrase expressing the honesty and power of unspoken emotions through actions."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/lipsDontLie.jpg"
 })
 
 
@@ -245,7 +245,7 @@ CPL.addEventListener("click", () => {
   eventdescription.innerHTML = "Citro Premier League Cricket: A spirited campus cricket league fostering talent, teamwork, and spirited competition among students."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/cricket.jpeg"
 })
 
 let Chess = document.querySelector("#Chess")
@@ -265,7 +265,7 @@ Carrom.addEventListener("click", () => {
   eventdescription.innerHTML = "Carrom: Flick, strike, and pocket precision coins on a smooth board, blending skill and strategy for victory."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/carrom.jpg"
 })
 
 let Badminton = document.querySelector("#Badminton")
@@ -275,7 +275,7 @@ let Badminton = document.querySelector("#Badminton")
   eventdescription.innerHTML = "Badminton: Fast-paced court sport of smashes and rallies, demanding agility, precision, and tactical finesse for triumph."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/badmintton.jpg"
 })
 
 let Tug = document.querySelector("#Tug")
@@ -285,7 +285,7 @@ Tug.addEventListener("click", () => {
   eventdescription.innerHTML = "Tug of War: A gripping contest of strength and teamwork, where opposing forces strive for supremacy."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/tugOfWar.jpg"
 })
 
 
