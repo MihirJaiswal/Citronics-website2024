@@ -26,3 +26,26 @@ const hiddenElements = document.querySelectorAll('.notv');
 hiddenElements.forEach((el) => {
     observers.observe(el);
 })
+
+const productButtons = document.querySelectorAll(".eventSelected");
+const payment = document.querySelector(".payment");
+const close = document.querySelector(".close");
+const services = document.querySelectorAll(".service-info");
+
+productButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    payment.style.display = "flex";
+    services.forEach(service => {
+      service.style.filter = "blur(8px)";
+    });
+  });
+});
+
+close.addEventListener("click", () => {
+  payment.style.display = "none";
+  services.forEach(service => {
+    service.style.filter = "blur(0px)";
+  });
+});
+
+

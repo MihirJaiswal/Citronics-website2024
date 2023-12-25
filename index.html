@@ -307,6 +307,10 @@
     list-style-type:circle;
   }
   
+  .service .box-container .service-info li{
+    cursor: pointer;
+  }
+
   .service-info:hover {
     transform: scale(1.001);
     filter: drop-shadow(0 0 0.25rem #4B5563);
@@ -324,6 +328,82 @@
   color: #b1afaf;
   font-size: 20px;
 }
+
+.payment{
+    width: 800px;
+    height: 650px;
+    background-color: #121826;
+    filter: drop-shadow(0 0 0.25rem #535c6a);
+    border: 1px solid #C4B5FD;
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5%;
+    margin: auto;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.8); 
+    box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.8);
+    z-index: 9999;
+}
+
+
+
+.cardIcons{
+    display: flex;
+}
+
+.cardIcon{
+    margin-right: 10px;
+}
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sm{
+    width: 30%;
+}
+
+
+
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: -40px;
+    width: 100%;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 26px -6px rgba(0,0,0,0.43); 
+    box-shadow: 0px 0px 26px -6px rgba(0,0,0,0.43);
+    background-color: #48b174;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(97, 94, 94);
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+
+
 
 .container{
   position: relative;
@@ -640,8 +720,12 @@ textarea.input {
   .btn {
     padding: 0.45rem 1.2rem;
   }
-}
   
+  
+}
+
+
+
 }
 
 @media (max-width: 768px) {
@@ -653,6 +737,7 @@ textarea.input {
     top: 80%;
     left: 30%;
     right: 0;
+    height:680px;
     background: #fff;
     border-top: 0.2rem solid #C4B5FD;
     border-bottom: 0.2rem solid #C4B5FD;
@@ -678,11 +763,14 @@ textarea.input {
   .swiper-button-prev {
     display: none;
   }
+  
 }
 
 @media (max-width: 850px) {
   .form {
     grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
   }
 
   .contact-info:before {
@@ -698,17 +786,6 @@ textarea.input {
     right: 70px;
   }
 
-  .square {
-    transform: translate(140%, 43%);
-    height: 350px;
-  }
-
-  .big-circle {
-    bottom: 75%;
-    transform: scale(0.9) translate(-40%, 30%);
-    right: 50%;
-  }
-
   .text {
     margin: 1rem 0 1.5rem 0;
   }
@@ -716,10 +793,16 @@ textarea.input {
   .social-media {
     padding: 1.5rem 0 0 0;
   }
+
+  .payment{
+    width: 95%;
+    height: 100%;
+   }
+
 }
-.navbar .show{
-  display: flex;
-}
+
+
+
 
 </style>
 
@@ -806,14 +889,14 @@ textarea.input {
   </section>
   
   <!-- cards Section -->
-  <section class="bg-gray-900 px-6 pb-24 notv">
+  <section class="bg-gray-900 px-6 pb-24">
     <div class=" mx-auto text-white text-center">
      
       <div
         class="mt-2 space-y-8 md:space-y-0 md:flex md:space-x-8 md:justify-center "
       >
         <!-- card 1 -->
-        <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 flex flex-col" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
+        <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 flex flex-col notv" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
           <img class="w-full" src="assests/techincalEventGraphic.png" alt="" />
           <div style="background-color: #212936;" class="p-4 text-left h-full">
             <h3 class="text-lg">Technical</h3>
@@ -839,7 +922,7 @@ textarea.input {
         </div>
 
           <!-- card 2-->
-        <div class="max-w-xs md:max-w-xs mx-auto md:mx-0 md:max-w-lg flex flex-col" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
+        <div class="max-w-xs md:max-w-xs mx-auto md:mx-0 md:max-w-lg flex flex-col notv" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
             <div  style="background-color: #212936;" class="p-4 text-left h-full flex flex-col items-center">
                 <div class="text-lg font-bold text-center mt-4 mb-4 text-purple-300 tracking-widest uppercase text-[30px]">
                     <h2 class="text-purple-300 font-bold text-2xl">ABOUT CITRONICS</h2>
@@ -858,7 +941,7 @@ textarea.input {
             </div>
         </div>
         <!-- card 2 -->
-        <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 flex flex-col" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
+        <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 flex flex-col notv" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
           <img class="w-full" src="assests/managementEventGraphic.jpg" alt="" />
           <div style="background-color: #212936;" class="p-4 text-left h-full">
             <h3 class="text-lg">Managment</h3>
@@ -888,7 +971,7 @@ textarea.input {
 
  <!-- eventheading section -->
   <section class="bg-gray-900 px-6 notv" >
-    <div style="top: -10px; filter: drop-shadow(0 0 0.25rem #4B5563);" class="relative z-20">
+    <div style="top: -10px; filter: drop-shadow(0 0 0.25rem #4B5563);" class="relative z-0">
       <div
         class="bg-gray-800 border-solid border-2 border-gray-600 rounded-lg md:flex md:mx-auto md:divide-x md:divide-gray-600"
         style="max-width: 878px;"
@@ -910,115 +993,132 @@ textarea.input {
 
 <!-- events section -->
 
-<section class="service mx-auto mt-12 mb-12 align-center notv" id="service">
-<div class="box-container ">
+<section class="service mx-auto mt-12 mb-12 align-center" id="service">
+<div class="box-container">
 <div class="service-info notv">
 <img src="assests/robotics.jpg" alt="Makeup Service">
 <div class="content">
     <h2>Robotics</h2>
     <ol>
-        <li>Robo Race</li>
-        <li>Robo War</li>
-        <li>Line Follwer</li>
-        <li>Maze Solver</li>
-        <li>Pick Place</li>
-        <li>Electronic Yard</li>
+        <li class="eventSelected">Robo Race</li>
+        <li class="eventSelected">Robo War</li>
+        <li class="eventSelected">Line Follwer</li>
+        <li class="eventSelected">Maze Solver</li>
+        <li class="eventSelected">Pick Place</li>
+        <li class="eventSelected">Electronic Yard</li>
     </ol>
 </div>
 </div>
-<div class="service-info">
+<div class="service-info notv">
 <img src="assests/software.jpg" alt="Makeup Service">
 <div class="content">
     <h2>Software</h2>
     <ol>
-        <li>Code Hunter</li>
-        <li>Quizophile</li>
-        <li>Beat The Bug</li>
-        <li>Best Googler</li>
-        <li>Simon Game</li>
-        <li>Jumble Keys</li>
+        <li class="eventSelected">Code Hunter</li>
+        <li class="eventSelected">Quizophile</li>
+        <li class="eventSelected">Beat The Bug</li>
+        <li class="eventSelected">Best Googler</li>
+        <li class="eventSelected">Simon Game</li>
+        <li class="eventSelected">Jumble Keys</li>
     </ol>
 </div>
 </div>
-<div class="service-info ">
+<div class="service-info notv ">
 <img src="assests/pharma.png" alt="Makeup Service">
 <div class="content">
     <h2>Pharmacy</h2>
     <ol>
-        <li>Musical Chair</li>
-        <li>Pass the Wire</li>
-        <li>Music Voice</li>
-        <li>Selife Booth</li>
-        <li>Lips Don't Lie</li>
+        <li class="eventSelected">Musical Chair</li>
+        <li class="eventSelected">Pass the Wire</li>
+        <li class="eventSelected">Music Voice</li>
+        <li class="eventSelected">Selife Booth</li>
+        <li class="eventSelected">Lips Don't Lie</li>
     </ol>
 </div>
 </div>
-<div class="service-info">
+<div class="service-info notv">
 <img src="assests/sports.jpg" alt="Makeup Service">
 <div class="content">
     <h2>Sports</h2>
     <ol>
-        <li>CPL</li>
-        <li>Chess</li>
-        <li>Badminton</li>
-        <li>Carrom</li>
-        <li>Tug of War</li>
+        <li class="eventSelected">CPL</li>
+        <li class="eventSelected">Chess</li>
+        <li class="eventSelected">Badminton</li>
+        <li class="eventSelected">Carrom</li>
+        <li class="eventSelected">Tug of War</li>
     </ol>
     
 </div>
 </div>
-<div class="service-info">
+<div class="service-info notv">
 <img src="assests/onSpot.jpg" alt="Makeup Service">
 <div class="content">
     <h2>On Spot Events</h2>
     <ol>
-        <li>Rangoli</li>
-        <li>Office tennis</li>
-        <li>Jenga</li>
-        <li>Plank</li>
-        <li>Ballon cup</li>
+        <li class="eventSelected">Rangoli</li>
+        <li class="eventSelected">Office tennis</li>
+        <li class="eventSelected">Jenga</li>
+        <li class="eventSelected">Plank</li>
+        <li class="eventSelected">Ballon cup</li>
     </ol>
 </div>
 </div>
-<div class="service-info">
+<div class="service-info notv">
 <img src="assests/entrepreneur.png" alt="Makeup Service">
 <div class="content">
     <h2>Entrepreneur</h2>
     <ol>
-        <li>Youth got Talent</li>
-        <li>Money Heist</li>
-        <li>red light green light</li>
+        <li class="eventSelected">Youth got Talent</li>
+        <li class="eventSelected">Money Heist</li>
+        <li class="eventSelected">red light green light</li>
     </ol>
 </div>
 </div>
-<div class="service-info">
+<div class="service-info notv">
 <img src="assests/photography.jpg" alt="Makeup Service">
 <div class="content">
     <h2>Photography</h2>
     <ol>
-        <li>DSLR</li>
-        <li>Reel</li>
-        <li>Phone</li>
+        <li class="eventSelected">DSLR</li>
+        <li class="eventSelected">Reel</li>
+        <li class="eventSelected">Phone</li>
     </ol>
 </div>
 </div>
-<div class="service-info">
+<div class="service-info notv">
 <img src="assests/adventure.jpg" alt="Makeup Service">
 <div class="content">
     <h2>Adventure</h2>
     <ol>
-        <li>Roadies</li>
+        <li class="eventSelected">Roadies</li>
     </ol>
 </div>
 </div>
-<div class="service-info">
+<div class="service-info notv">
 <img src="assests/Quiz.jpg" alt="Makeup Service">
 <div class="content">
     <h2>Quiz</h2>
     <ol>
-        <li>National Quiz</li>
+        <li class="eventSelected">National Quiz</li>
     </ol>
 </div>
+</div>
+<div class="payment md:w-50% text-white border-solid border-2 border-gray-600 rounded-lg">
+  <div class="event-card">
+    <img src="assests/logo.png" alt="Event Image" class="mt-2 mx-auto">
+    <div class="event-details">
+      <img src="assests/chessEvent.jpg" alt="" class="h-40 mx-auto mt-4 mb-4 rounded-lg">
+      <div class="event-name text-purple-300 font-bold text-3xl text-center mt-4 mb-4">Event Name</div>
+      <div class="event-description text-gray-300 text-center mb-4 text-lg tracking-widest text-[30px]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+      </div>
+      <div class="flex justify-between mt-4 mb-4 text-gray-300 text-lg tracking-widest text-[30px]">
+      <div class="prize-money">Prize Money: <span></span></div>
+      <div class="participation-fees">Participation Fees: <span></span></div>
+    </div>
+    </div>
+  </div>
+  <span class="close">X</span>
 </div>
 
 
@@ -1030,10 +1130,9 @@ textarea.input {
 
   <div class="form notv">
     <div class="contact-info">
-      <h3 class="title">Let's get in touch</h3>
+      <h3 class="title">Follow Us</h3>
       <p class="text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-        dolorum adipisci recusandae praesentium dicta!
+        Make sure to follow us on our Social Media
       </p>
 
       <div class="info">
@@ -1135,3 +1234,5 @@ textarea.input {
 <script src="app.js"></script>
 </body>
  
+
+
