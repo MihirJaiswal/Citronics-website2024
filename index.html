@@ -11,6 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="img/style.css">
     <title>Citronics2k24</title>
   
     <style>
@@ -170,6 +173,64 @@
       .h-450px {
         height: 450px;
       }
+
+      .header {
+  position: sticky;
+  top: 80;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem 9%;
+}
+
+.header .logo {
+  font-size: 1rem;
+  color: #222;
+  font-weight: bolder;
+}
+
+.header .logo i {
+  color: #121826;
+}
+
+.header .navbar a {
+  margin: 0 1.5rem;
+  font-size: 1.1rem;
+  color: #f8f6f6;
+}
+
+.header .navbar a:hover {
+  color: #121826;
+}
+
+.header .icons div,
+.header .icons a {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  border-radius: 4rem;
+  background: #121826;
+  font-size: 1.3rem;
+  color: white;
+  margin-left: 16rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.header .icons a:hover,
+.header .icons div:hover {
+  background: #121826;
+  color: white;
+}
+
+.header #menu-btn {
+  display: none;
+}
+
 
   .service .box-container {
     display: flex;
@@ -509,6 +570,15 @@ textarea.input {
   opacity: 0.2;
 }
 
+.notv{
+  opacity: 0;
+  transition: all 1s;
+}
+
+.visi{
+  opacity: 1;
+}
+
 
   
       /* md screen size */
@@ -517,10 +587,13 @@ textarea.input {
           height: 689px;
         }
 
+        
      @media (max-width: 450px) {
         html {
        font-size: 50%;
       }
+
+    
       
         .container {
     padding: 1.5rem;
@@ -571,6 +644,42 @@ textarea.input {
   
 }
 
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    right: 0;
+    background: #fff;
+    border-top: 0.2rem solid #C4B5FD;
+    border-bottom: 0.2rem solid #C4B5FD;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    background: #121826;
+    border-top: 0.2rem solid #C4B5FD;
+    border-bottom: 0.2rem solid #C4B5FD;
+    padding: 0.2rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 1rem;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
 @media (max-width: 850px) {
   .form {
     grid-template-columns: 1fr;
@@ -616,47 +725,26 @@ textarea.input {
 
 <body>
   
+</head>
 
-
-
-  </head>
   <div class="relative">
     <div
       class="absolute inset-0 z-10 bg-gradient-to-b from-black to-transparent hidden md:block"
       style="bottom: -35px;"
     ></div>
-    <header
-      class="flex justify-between py-18 relative z-20 mx-auto px-6"
-      style="max-width: 1200px;"
-    >
-      <div class="flex justify-center items-center">
-       
-        <nav class="hidden md:block navbar">
-          <a href="" class="text-white py-8 px-16 no-underline">Home</a>
-          <a href="" class="text-white py-8 px-16 no-underline">About</a>
-          <a href="" class="text-white py-8 px-16 no-underline">Events</a>
-          <a href="" class="text-white py-8 px-16 no-underline">Contact</a>
-        </nav>
+    <section id="header" class="header">
+      
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">About</a>
+        <a href="#blogs">Event</a>
+        <a href="#contacts">Contacts</a>
+      </nav>
+      <img src="" alt="">
+      <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
       </div>
-      <div class="items-center hidden md:flex">
-        <img src="assests/logo.png" alt="" style="margin-right: 50px; height: 50px " />
-      </div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6 text-white md:hidden"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        id="menu-btn"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"
-        />
-      </svg>
-    </header>
+  </section>
   </div>
   
   <section
@@ -687,7 +775,7 @@ textarea.input {
   
   <!-- stats section -->
   <section class="bg-gray-900 px-6">
-    <div style="top: -100px;" class="relative z-20">
+    <motion.div style="top: -100px;" class="relative z-20">
       <div
         class="bg-gray-800 border-solid border-2 border-gray-600 rounded-lg md:flex md:mx-auto md:divide-x md:divide-gray-600"
         style="max-width: 878px; filter: drop-shadow(0 0 0.25rem #4B5563);"
@@ -714,11 +802,11 @@ textarea.input {
       <!-- <p class="text-gray-500 text-xs text-center mt-4">
         Metrics update real-time
       </p -->>
-    </div>
+    </motion.div>
   </section>
   
   <!-- cards Section -->
-  <section class="bg-gray-900 px-6 pb-24">
+  <section class="bg-gray-900 px-6 pb-24 notv">
     <div class=" mx-auto text-white text-center">
      
       <div
@@ -799,7 +887,7 @@ textarea.input {
   </section>
 
  <!-- eventheading section -->
-  <section class="bg-gray-900 px-6" >
+  <section class="bg-gray-900 px-6 notv" >
     <div style="top: -10px; filter: drop-shadow(0 0 0.25rem #4B5563);" class="relative z-20">
       <div
         class="bg-gray-800 border-solid border-2 border-gray-600 rounded-lg md:flex md:mx-auto md:divide-x md:divide-gray-600"
@@ -822,9 +910,9 @@ textarea.input {
 
 <!-- events section -->
 
-<section class="service mx-auto mt-12 mb-12 align-center" id="service">
+<section class="service mx-auto mt-12 mb-12 align-center notv" id="service">
 <div class="box-container ">
-<div class="service-info">
+<div class="service-info notv">
 <img src="assests/robotics.jpg" alt="Makeup Service">
 <div class="content">
     <h2>Robotics</h2>
@@ -940,7 +1028,7 @@ textarea.input {
 <section class="bg-gray-900 px-6 ">
 <div class="container">
 
-  <div class="form">
+  <div class="form notv">
     <div class="contact-info">
       <h3 class="title">Let's get in touch</h3>
       <p class="text">
@@ -1012,7 +1100,7 @@ textarea.input {
 </div>
 </section>
 
-<footer class="bg-gray-800 py-2 md:py-16 text-gray-300 mt-16">
+<footer class="bg-gray-800 py-2 md:py-16 text-gray-300 mt-16 notv">
   <div class="justify-contnent mx-auto w-5/6 gap-80 md:flex mb-12">
       <div class="flex gap-[80px] md:gap-20">
       <div class="mt-16 basis-1/4 md:mt-0">
