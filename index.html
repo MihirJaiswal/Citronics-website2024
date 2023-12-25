@@ -187,6 +187,7 @@
     position: relative;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     padding: 20px;
+    filter: drop-shadow(0 0 0.25rem #535c6a);
   }
   
   .service .box-container .service-info:hover .content {
@@ -257,7 +258,7 @@
 }
 
   .copyright {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
   color: #b1afaf;
   font-size: 20px;
@@ -287,6 +288,7 @@
 .contact-form {
   background-color: #1F2937;
   position: relative;
+
 }
 
 
@@ -299,6 +301,7 @@
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
+
 }
 
 form {
@@ -605,8 +608,15 @@ textarea.input {
     padding: 1.5rem 0 0 0;
   }
 }
+.navbar .show{
+  display: flex;
+}
 
 </style>
+
+<body>
+  
+
 
 
   </head>
@@ -621,7 +631,7 @@ textarea.input {
     >
       <div class="flex justify-center items-center">
        
-        <nav class="hidden md:block">
+        <nav class="hidden md:block navbar">
           <a href="" class="text-white py-8 px-16 no-underline">Home</a>
           <a href="" class="text-white py-8 px-16 no-underline">About</a>
           <a href="" class="text-white py-8 px-16 no-underline">Events</a>
@@ -637,6 +647,7 @@ textarea.input {
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
+        id="menu-btn"
       >
         <path
           stroke-linecap="round"
@@ -1018,7 +1029,7 @@ textarea.input {
       </div>
       </div>
       <div class="mt-16 basis-1/2 md:mt-0">
-      <img alt="logo" src="assests/logo.png" />
+      <img alt="logo" src="assests/logo.png" style="filter: drop-shadow(0 0 0.25rem #525a67);" />
       <p class="my-5">
       Lorem vitae ut augue auctor faucibus eget eget ut libero. Elementum
       purus et arcu massa dictum condimentum. Augue scelerisque iaculis
@@ -1033,5 +1044,6 @@ textarea.input {
 
 </footer>
 
-  
+<script src="app.js"></script>
+</body>
  
