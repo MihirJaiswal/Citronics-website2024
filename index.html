@@ -311,6 +311,10 @@
     cursor: pointer;
   }
 
+  .service .box-container .service-info li:hover{
+    color: #C4B5FD;
+  }
+
   .service-info:hover {
     transform: scale(1.001);
     filter: drop-shadow(0 0 0.25rem #4B5563);
@@ -343,7 +347,7 @@
     border-radius: 5%;
     margin: auto;
     padding: 10px 50px;
-    display: flex;
+    display: none;
     flex-direction: column;
     -webkit-box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.8); 
     box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.8);
@@ -594,7 +598,7 @@ textarea.input {
 }
 
 .icon {
-  width: 28px;
+  width: 48px;
   margin-right: 0.7rem;
 }
 
@@ -608,19 +612,23 @@ textarea.input {
 
 .social-icons {
   display: flex;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .social-icons a {
-  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #C4B5FD, #C4B5FD);
+  background: linear-gradient(45deg, #1F2937, #1F2937);
   color: #fff;
   text-align: center;
   line-height: 35px;
   margin-right: 0.5rem;
   transition: 0.3s;
+  object-fit: contain;
 }
 
 .social-icons a:hover {
@@ -823,6 +831,9 @@ textarea.input {
         <a href="#blogs">Event</a>
         <a href="#contacts">Contacts</a>
       </nav>
+      <div class="md:flex md:right-20 md:top-5 md:absolute">
+        <img src="assests/logo.png" alt="" class="h-10">
+      </div>
       <img src="" alt="">
       <div class="icons">
           <div id="menu-btn" class="fas fa-bars"></div>
@@ -899,8 +910,8 @@ textarea.input {
         <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 flex flex-col notv" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
           <img class="w-full" src="assests/techincalEventGraphic.png" alt="" />
           <div style="background-color: #212936;" class="p-4 text-left h-full">
-            <h3 class="text-lg">Technical</h3>
-            <p class="text-sm mt-2" style="color: #D5D5DA">
+            <h3 class="text-lg text-purple-300 font-bold text-center text-2xl">Technical</h3>
+            <p class="text-sm mt-4 text-center" style="color: #D5D5DA">
                 Cutting-edge tech showcase: Innovation, coding, robotics, AI, and more!
             </p>
   
@@ -944,8 +955,8 @@ textarea.input {
         <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 flex flex-col notv" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
           <img class="w-full" src="assests/managementEventGraphic.jpg" alt="" />
           <div style="background-color: #212936;" class="p-4 text-left h-full">
-            <h3 class="text-lg">Managment</h3>
-            <p class="text-sm mt-2" style="color: #D5D5DA">
+            <h3 class="text-lg text-purple-300 font-bold text-center text-2xl">Managment</h3>
+            <p class="text-sm mt-4 text-center" style="color: #D5D5DA">
                 Strategic leadership, teamwork, and problem-solving in dynamic business scenarios.
             </p>
   
