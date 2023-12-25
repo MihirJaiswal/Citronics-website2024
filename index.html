@@ -1012,12 +1012,12 @@ textarea.input {
 <div class="content">
     <h2>Robotics</h2>
     <ol>
-        <li class="eventSelected">Robo Race</li>
-        <li class="eventSelected">Robo War</li>
-        <li class="eventSelected">Line Follwer</li>
-        <li class="eventSelected">Maze Solver</li>
-        <li class="eventSelected">Pick Place</li>
-        <li class="eventSelected">Electronic Yard</li>
+        <li class="eventSelected" id="Robo-race">Robo Race</li>
+        <li class="eventSelected" id="Robo-war">Robo War</li>
+        <li class="eventSelected" id="Line">Line Follwer</li>
+        <li class="eventSelected" id="Maze">Maze Solver</li>
+        <li class="eventSelected" id="Pick">Pick Place</li>
+        <li class="eventSelected" id="Electronic">Electronic Yard</li>
     </ol>
 </div>
 </div>
@@ -1026,12 +1026,12 @@ textarea.input {
 <div class="content">
     <h2>Software</h2>
     <ol>
-        <li class="eventSelected">Code Hunter</li>
-        <li class="eventSelected">Quizophile</li>
-        <li class="eventSelected">Beat The Bug</li>
-        <li class="eventSelected">Best Googler</li>
-        <li class="eventSelected">Simon Game</li>
-        <li class="eventSelected">Jumble Keys</li>
+        <li class="eventSelected" id="Code">Code Hunter</li>
+        <li class="eventSelected" id="Quiz">Quizophile</li>
+        <li class="eventSelected" id="Bug">Beat The Bug</li>
+        <li class="eventSelected" id="googler">Best Googler</li>
+        <li class="eventSelected" id="Simon">Simon Game</li>
+        <li class="eventSelected" id="jumble">Jumble Keys</li>
     </ol>
 </div>
 </div>
@@ -1040,11 +1040,11 @@ textarea.input {
 <div class="content">
     <h2>Pharmacy</h2>
     <ol>
-        <li class="eventSelected">Musical Chair</li>
-        <li class="eventSelected">Pass the Wire</li>
-        <li class="eventSelected">Music Voice</li>
-        <li class="eventSelected">Selife Booth</li>
-        <li class="eventSelected">Lips Don't Lie</li>
+        <li class="eventSelected" id="musical">Musical Chair</li>
+        <li class="eventSelected" id="pass">Pass the Wire</li>
+        <li class="eventSelected" id="music">Music Voice</li>
+        <li class="eventSelected" id="booth">Selife Booth</li>
+        <li class="eventSelected" id="lips">Lips Don't Lie</li>
     </ol>
 </div>
 </div>
@@ -1053,11 +1053,11 @@ textarea.input {
 <div class="content">
     <h2>Sports</h2>
     <ol>
-        <li class="eventSelected">CPL</li>
-        <li class="eventSelected">Chess</li>
-        <li class="eventSelected">Badminton</li>
-        <li class="eventSelected">Carrom</li>
-        <li class="eventSelected">Tug of War</li>
+        <li class="eventSelected" id="CPL">CPL</li>
+        <li class="eventSelected" id="Chess">Chess</li>
+        <li class="eventSelected" id="Badminton">Badminton</li>
+        <li class="eventSelected" id="Carrom">Carrom</li>
+        <li class="eventSelected" id="Tug">Tug of War</li>
     </ol>
     
 </div>
@@ -1067,11 +1067,11 @@ textarea.input {
 <div class="content">
     <h2>On Spot Events</h2>
     <ol>
-        <li class="eventSelected">Rangoli</li>
-        <li class="eventSelected">Office tennis</li>
-        <li class="eventSelected">Jenga</li>
-        <li class="eventSelected">Plank</li>
-        <li class="eventSelected">Ballon cup</li>
+        <li class="eventSelected" id="Rangoli">Rangoli</li>
+        <li class="eventSelected" id="tennis">Office tennis</li>
+        <li class="eventSelected" id="jenga">Jenga</li>
+        <li class="eventSelected" id="Plank">Plank</li>
+        <li class="eventSelected" id="Ballon">Ballon cup</li>
     </ol>
 </div>
 </div>
@@ -1080,9 +1080,9 @@ textarea.input {
 <div class="content">
     <h2>Entrepreneur</h2>
     <ol>
-        <li class="eventSelected">Youth got Talent</li>
-        <li class="eventSelected">Money Heist</li>
-        <li class="eventSelected">red light green light</li>
+        <li class="eventSelected" id="youth">Youth got Talent</li>
+        <li class="eventSelected" id="money">Money Heist</li>
+        <li class="eventSelected" id="redGreen">red light green light</li>
     </ol>
 </div>
 </div>
@@ -1091,9 +1091,9 @@ textarea.input {
 <div class="content">
     <h2>Photography</h2>
     <ol>
-        <li class="eventSelected">DSLR</li>
-        <li class="eventSelected">Reel</li>
-        <li class="eventSelected">Phone</li>
+        <li class="eventSelected" id="DSLR">DSLR</li>
+        <li class="eventSelected" id="Reel">Reel</li>
+        <li class="eventSelected" id="Phone">Phone</li>
     </ol>
 </div>
 </div>
@@ -1102,7 +1102,7 @@ textarea.input {
 <div class="content">
     <h2>Adventure</h2>
     <ol>
-        <li class="eventSelected">Roadies</li>
+        <li class="eventSelected" id="Roadies">Roadies</li>
     </ol>
 </div>
 </div>
@@ -1111,7 +1111,7 @@ textarea.input {
 <div class="content">
     <h2>Quiz</h2>
     <ol>
-        <li class="eventSelected">National Quiz</li>
+        <li class="eventSelected" id="Quiz">National Quiz</li>
     </ol>
 </div>
 </div>
@@ -1119,14 +1119,14 @@ textarea.input {
   <div class="event-card">
     <img src="assests/logo.png" alt="Event Image" class="mt-2 mx-auto">
     <div class="event-details">
-      <img src="assests/chessEvent.jpg" alt="" class="h-40 mx-auto mt-4 mb-4 rounded-lg">
-      <div class="event-name text-purple-300 font-bold text-3xl text-center mt-4 mb-4">Event Name</div>
+      <img src="" alt="" class="h-40 mx-auto mt-4 mb-4 rounded-lg" id="event-image">
+      <div class="event-name text-purple-300 font-bold text-3xl text-center mt-4 mb-4">Event Name: <span id="event-name"></span></div>
       <div class="event-description text-gray-300 text-center mb-4 text-lg tracking-widest text-[30px]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+        <span id="event-description"></span>
       </div>
       <div class="flex justify-between mt-4 mb-4 text-gray-300 text-lg tracking-widest text-[30px]">
-      <div class="prize-money">Prize Money: <span></span></div>
-      <div class="participation-fees">Participation Fees: <span></span></div>
+      <div class="prize-money">Prize Money: <span id="prize-money"></span></div>
+      <div class="participation-fees">Participation Fees: <span id="participation-fees"></span></div>
     </div>
     </div>
   </div>
