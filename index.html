@@ -203,7 +203,7 @@
 }
 
 .header .navbar a:hover {
-  color: #121826;
+  color: #C4B5FD;
 }
 
 .header .icons div,
@@ -748,7 +748,8 @@ textarea.input {
     height:680px;
     background: #fff;
     border-top: 0.2rem solid #C4B5FD;
-    border-bottom: 0.2rem solid #C4B5FD;
+    border-left: 0.2rem solid #C4B5FD;
+
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     background: #121826;
@@ -823,13 +824,13 @@ textarea.input {
       class="absolute inset-0 z-10 bg-gradient-to-b from-black to-transparent hidden md:block"
       style="bottom: -35px;"
     ></div>
-    <section id="header" class="header">
+    <section id="header" class="header" id="home">
       
       <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#services">About</a>
-        <a href="#blogs">Event</a>
-        <a href="#contacts">Contacts</a>
+        <a href="#home">home</a>
+        <a href="#about">About</a>
+        <a href="#event">Event</a>
+        <a href="#contact">Contacts</a>
       </nav>
       <div class="md:flex md:right-20 md:top-5 md:absolute">
         <img src="assests/logo.png" alt="" class="h-10">
@@ -900,7 +901,7 @@ textarea.input {
   </section>
   
   <!-- cards Section -->
-  <section class="bg-gray-900 px-6 pb-24">
+  <section class="bg-gray-900 px-6 pb-24" id="about">
     <div class=" mx-auto text-white text-center">
      
       <div
@@ -981,7 +982,7 @@ textarea.input {
   </section>
 
  <!-- eventheading section -->
-  <section class="bg-gray-900 px-6 notv" >
+  <section class="bg-gray-900 px-6 notv" id="event">
     <div style="top: -10px; filter: drop-shadow(0 0 0.25rem #4B5563);" class="relative z-0">
       <div
         class="bg-gray-800 border-solid border-2 border-gray-600 rounded-lg md:flex md:mx-auto md:divide-x md:divide-gray-600"
@@ -1136,28 +1137,34 @@ textarea.input {
 </div>
 </section>
 
-<section class="bg-gray-900 px-6 ">
+<section class="bg-gray-900 px-6 " id="contact">
 <div class="container">
 
   <div class="form notv">
     <div class="contact-info">
       <h3 class="title">Follow Us</h3>
       <p class="text">
-        Make sure to follow us on our Social Media
+        Make sure to follow us on our Social Media and reachout to us for any query
       </p>
 
       <div class="info">
         <div class="information">
-          <img src="img/location.png" class="icon" alt="" />
-          <p>Chameli Devi Group Of Institution,Indore, (M.P.)</p>
+          <div class="mr-2 text-purple-300 text-3xl tracking-widest">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+          <p> Chameli Devi Group Of Institution,Indore, (M.P.)</p>
         </div>
         <div class="information">
-          <img src="img/email.png" class="icon" alt="" />
-          <p>lorem@ipsum.com</p>
+          <div class="mr-2 text-purple-300 text-3xl tracking-widest mt-2">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+          <p> lorem@ipsum.com</p>
         </div>
         <div class="information">
-          <img src="img/phone.png" class="icon" alt="" />
-          <p>123-456-789</p>
+          <div class="mr-2 text-purple-300 text-3xl tracking-widest mt-2">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+          <p> 123-456-789</p>
         </div>
       </div>
 
