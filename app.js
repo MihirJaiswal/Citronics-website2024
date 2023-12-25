@@ -420,12 +420,124 @@ Roadies.addEventListener("click", () => {
   eventImage.src = "assests/roboWar.png"
 })
 
-/* let redGreen = document.querySelector("#redGreen")
+ let CAD = document.querySelector("#CAD")
 
-redGreen.addEventListener("click", () => {
-  eventname.innerHTML = "Red Light Green Light"
-  eventdescription.innerHTML = "Red Light Green Light: inspired from the k-drama squid game."
+CAD.addEventListener("click", () => {
+  eventname.innerHTML = "Auto CAD"
+  eventdescription.innerHTML = "Auto CAD: Create stunning 2D and 3D designs with precision and creativity, combining technology and art for stunning visuals."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
   eventImage.src = "assests/roboWar.png"
-}) */
+})
+ 
+
+let Kart = document.querySelector("#Kart")
+
+Kart.addEventListener("click", () => {
+  eventname.innerHTML = "Fun Kard"
+  eventdescription.innerHTML = "Fun Kart: A fun-filled adventure game where participants race to reach the finish line on a kart track."
+  prizeMoney.innerHTML = "70000"
+  participationFees.innerHTML = "5000"
+  eventImage.src = "assests/roboWar.png"
+})
+ 
+
+let Cycle = document.querySelector("#Cycle")
+
+Cycle.addEventListener("click", () => {
+  eventname.innerHTML = "Slow Cycle"
+  eventdescription.innerHTML = "Slow Cycle: A fun-filled adventure game where participants race to reach the finish line on a bike track last."
+  prizeMoney.innerHTML = "70000"
+  participationFees.innerHTML = "5000"
+  eventImage.src = "assests/roboWar.png"
+})
+  
+let Dance = document.querySelector("#Dance")
+
+Dance.addEventListener("click", () => {
+  eventname.innerHTML = "Dance"
+  eventdescription.innerHTML = "Dance: Expressive art form transcending cultures, conveying emotions through rhythmic movements, uniting hearts with universal language."
+  prizeMoney.innerHTML = "70000"
+  participationFees.innerHTML = "5000"
+  eventImage.src = "assests/roboWar.png"
+})
+
+let Mic = document.querySelector("#Mic")
+
+Mic.addEventListener("click", () => {
+  eventname.innerHTML = "Open Mic"
+  eventdescription.innerHTML = "Open Mic: A platform for artistic expression, where voices, music, and stories resonate freely, embracing creativity and diversity."
+  prizeMoney.innerHTML = "70000"
+  participationFees.innerHTML = "5000"
+  eventImage.src = "assests/roboWar.png"
+})
+
+let Band = document.querySelector("#Band")
+
+Band.addEventListener("click", () => {
+  eventname.innerHTML = "Band War"
+  eventdescription.innerHTML = "Band War: Electrifying showdown of musical prowess, where diverse sounds clash, harmonize, and vie for audience acclaim."
+  prizeMoney.innerHTML = "70000"
+  participationFees.innerHTML = "5000"
+  eventImage.src = "assests/roboWar.png"
+})
+
+let Draw = document.querySelector("#Draw")
+
+Draw.addEventListener("click", () => {
+  eventname.innerHTML = "Draw Up"
+  eventdescription.innerHTML = "Draw up: A creative convergence where art and civic engagement unite, illustrating community values through visual expressions."
+  prizeMoney.innerHTML = "70000"
+  participationFees.innerHTML = "5000"
+  eventImage.src = "assests/roboWar.png"
+})
+
+let Mania = document.querySelector("#Mania")
+
+Mania.addEventListener("click", () => {
+  eventname.innerHTML = "Bridge Mania"
+  eventdescription.innerHTML = "Bridge Mania: An exciting competition challenging engineering and creativity, as teams design and build innovative bridge structures."
+  prizeMoney.innerHTML = "70000"
+  participationFees.innerHTML = "5000"
+  eventImage.src = "assests/roboWar.png"
+})
+
+let Arc = document.querySelector("#Arc")
+
+Arc.addEventListener("click", () => {
+  eventname.innerHTML = "Arc Bridge"
+  eventdescription.innerHTML = "Arc Bridge: Engineering marvel, arching gracefully over obstacles, combining strength and aesthetics for seamless structural elegance."
+  prizeMoney.innerHTML = "70000"
+  participationFees.innerHTML = "5000"
+  eventImage.src = "assests/roboWar.png"
+})
+
+let Rampwalk = document.querySelector("#Rampwalk")
+
+Rampwalk.addEventListener("click", () => {
+  eventname.innerHTML = "Rampwalk"
+  eventdescription.innerHTML = "Ramp Walk: Fashion's dynamic showcase, where models strut with confidence, embodying style and charisma on the runway."
+  prizeMoney.innerHTML = "70000"
+  participationFees.innerHTML = "5000"
+  eventImage.src = "assests/roboWar.png"
+})
+
+let Treasure = document.querySelector("#Treasure")
+
+Treasure.addEventListener("click", () => {
+  eventname.innerHTML = "Treasure Hunt"
+  eventdescription.innerHTML = "Treasure Hunt: Thrilling adventure quest, deciphering clues, solving puzzles, and exploring to discover hidden treasures and secrets."
+  prizeMoney.innerHTML = "70000"
+  participationFees.innerHTML = "5000"
+  eventImage.src = "assests/roboWar.png"
+})
+
+let Chef = document.querySelector("#Chef")
+
+Chef.addEventListener("click", () => {
+  eventname.innerHTML = "Master Chef"
+  eventdescription.innerHTML = "Master Chef: Culinary competition showcasing top chefs' skill, creativity, and innovation as they craft gastronomic delights under pressure."
+  prizeMoney.innerHTML = "70000"
+  participationFees.innerHTML = "5000"
+  eventImage.src = "assests/roboWar.png"
+})
