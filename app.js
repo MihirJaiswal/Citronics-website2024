@@ -297,7 +297,7 @@ Rangoli.addEventListener("click", () => {
   eventdescription.innerHTML = "Rangoli: A unique art form, combining the beauty of traditional Indian art with modern technology."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/rangoli.jpg"
 })
   
 
@@ -308,7 +308,7 @@ tennis.addEventListener("click", () => {
   eventdescription.innerHTML = "Office Tennis: A classic game of tennis, with a focus on speed, accuracy, and strategic play."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/officeTennis.jpg"
 })
 
 let jenga = document.querySelector("#jenga")
@@ -318,7 +318,7 @@ jenga.addEventListener("click", () => {
   eventdescription.innerHTML = "Jenga: A classic game of stacking blocks, with a focus on speed, accuracy, and strategic play."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/jenga.jpg"
 })
   
 
@@ -329,7 +329,7 @@ Plank.addEventListener("click", () => {
   eventdescription.innerHTML = "Plank: Core-strengthening exercise, holding a position for endurance, sculpting strength and stability in mere minutes."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/plank.jpg"
 })
 
 let Ballon = document.querySelector("#Ballon")
@@ -339,20 +339,9 @@ Ballon.addEventListener("click", () => {
   eventdescription.innerHTML = "Ballon cup: A classic game of throwing a ball, with a focus on speed, accuracy, and strategic play."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/balloonCup.jpg"
 })
   
-
-let  = document.querySelector("#Robo-war")
-
-roboWar.addEventListener("click", () => {
-  eventname.innerHTML = "Robo War"
-  eventdescription.innerHTML = "Robo War: Fierce battles unfold as armed robotic warriors clash in intense contests of engineering innovation."
-  prizeMoney.innerHTML = "70000"
-  participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
-})
-
 let youth = document.querySelector("#youth")
 
 youth.addEventListener("click", () => {
@@ -360,7 +349,7 @@ youth.addEventListener("click", () => {
   eventdescription.innerHTML = "Youth Got Talent: A creative competition for young talent, where participants showcase their creativity and problem-solving skills."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/youthGotTalent.jpg"
 })
  
 
@@ -371,7 +360,7 @@ money.addEventListener("click", () => {
   eventdescription.innerHTML = "Money Heist: A classic crime drama, with a focus on the power of the law and the power of the money."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/moneyHeist.jpeg"
 })
 
 let redGreen = document.querySelector("#redGreen")
@@ -381,7 +370,7 @@ redGreen.addEventListener("click", () => {
   eventdescription.innerHTML = "Red Light Green Light: inspired from the k-drama squid game."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/redLightGreenLight.jpg"
 })
 
 let DSLR = document.querySelector("#DSLR")
@@ -391,7 +380,7 @@ DSLR.addEventListener("click", () => {
   eventdescription.innerHTML = "DSLR Photography: Capturing life's moments with precision and creativity, blending technology and art for stunning visuals."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/DSLR.jpeg"
 })
 
 let Reel = document.querySelector("#Reel")
@@ -401,7 +390,7 @@ Reel.addEventListener("click", () => {
   eventdescription.innerHTML = "Reel Making: Crafting visual stories, combining imagination and skill to weave compelling narratives through cinematic artistry."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/reelMaking.jpg"
 })
 
 let Phone = document.querySelector("#Phone")
@@ -411,7 +400,7 @@ Phone.addEventListener("click", () => {
   eventdescription.innerHTML = "Phone Photography: Unleashing creativity with a pocket-sized lens, transforming everyday moments into captivating visual stories effortlessly."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/phonePhoto.jpg"
 })
 
 let Roadies = document.querySelector("#Roadies")
@@ -421,7 +410,7 @@ Roadies.addEventListener("click", () => {
   eventdescription.innerHTML = "Roadies: Adventurous reality show testing grit and resilience, challenging contestants through thrilling tasks on a road-tripping journey."
   prizeMoney.innerHTML = "70000"
   participationFees.innerHTML = "5000"
-  eventImage.src = "assests/roboWar.png"
+  eventImage.src = "assests/roadies.jpg"
 })
 
  let CAD = document.querySelector("#CAD")
