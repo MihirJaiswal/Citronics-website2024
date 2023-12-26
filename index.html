@@ -795,6 +795,7 @@ textarea.input {
 
 <body>
   
+  <section>
 </head>
 
   <div class="relative">
@@ -847,7 +848,9 @@ textarea.input {
     </div>
   </section>
   
+  
   <!-- stats section -->
+  <div id="particles-js" class="absolute w-full h-full notv visi"></div>
   <section class="bg-gray-900 px-6">
     <div style="top: -100px;" class="relative z-20"  id="stats">
       <div
@@ -884,7 +887,7 @@ textarea.input {
     <div class=" mx-auto text-white text-center">
      
       <div
-        class="mt-2 space-y-8 md:space-y-0 md:flex md:space-x-8 md:justify-center "
+      class="mt-2 space-y-8 md:space-y-0 md:flex md:space-x-8 md:justify-center " id="cardContainer"
       >
         <!-- card 1 -->
         <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 flex flex-col notv" style="filter: drop-shadow(0 0 0.25rem #4B5563);" id="card1">
@@ -984,7 +987,7 @@ textarea.input {
 
 <!-- events section -->
 
-<section class="service mx-auto mt-12 mb-12 align-center" id="service">
+<section class="service mx-auto mt-12 mb-12 align-center " id="service">
 <div class="box-container">
 <div class="service-info notv">
 <img src="assests/robotics.jpg" alt="Makeup Service">
@@ -1153,6 +1156,7 @@ textarea.input {
 </div>
 </section>
 
+<div id="particles2-js" class="absolute w-full notv visi z-0"></div>
 <section class="bg-gray-900 px-6 " id="contact">
 <div class="container">
 
@@ -1233,7 +1237,7 @@ textarea.input {
 </div>
 </section>
 
-<footer class="bg-gray-800 py-2 md:py-12 text-gray-300 mt-16 notv">
+<footer class="bg-gray-800 py-2 md:py-12 text-gray-300 mt-16 relative">
   <div class="flex flex-col md:flex md:flex-row md:justify-between md:items-center px-6 mx-auto">
     <div class="justify-contnent mx-auto w-5/6 gap-80 md:flex">
       <div class="flex gap-16 md:gap-16">
@@ -1265,14 +1269,120 @@ Celebrate the spirit of camaraderie and indulge in a feast for the senses at our
 <div class="separator-line"></div>
 <div class="copyright"> <p class="text-center text-sm">&copy; Made by Mihir Jaiswal. <a href="https://github.com/MihirJaiswal"> <img class="h-5 w-5 inline mb-1" src="assests/social-github.svg" alt=""> </a> All rights reserved.</p></div>
 </div>
+</section> 
 
 </footer>
 
+<!-- Include Particle.js from CDN -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS('particles-js', {
+    particles: {
+      number: {
+        value: 100,
+      },
+      color: {
+        value: '#C4B5FD',
+      },
+      shape: {
+        type: 'circle',
+      },
+      opacity: {
+        value: 0.8,
+        random: true,
+        anim: {
+          enable: true,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: false,
+        },
+        random: true,
+      },
+      size: {
+        value: 5,
+        random: true,
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: '#ffffff',
+        opacity: 0.3,
+        width: 0.7,
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: 'none',
+        random: true,
+        straight: false,
+        out_mode: 'out',
+      },
+    },
+    interactivity: {
+      events: {
+        onhover: {
+          enable: true,
+          mode: 'repulse',
+        },
+      },
+    },
+  });
+  particlesJS('particles2-js', {
+    particles: {
+      number: {
+        value: 100,
+      },
+      color: {
+        value: '#C4B5FD',
+      },
+      shape: {
+        type: 'circle',
+      },
+      opacity: {
+        value: 0.8,
+        random: true,
+        anim: {
+          enable: true,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: false,
+        },
+        random: true,
+      },
+      size: {
+        value: 5,
+        random: true,
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: '#ffffff',
+        opacity: 0.3,
+        width: 0.7,
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: 'none',
+        random: true,
+        straight: false,
+        out_mode: 'out',
+      },
+    },
+    interactivity: {
+      events: {
+        onhover: {
+          enable: true,
+          mode: 'repulse',
+        },
+      },
+    },
+  });
 
+</script>
 <script src="app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
-<script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 
