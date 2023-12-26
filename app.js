@@ -1,3 +1,20 @@
+
+window.onload = function() {
+  gsap.from("#myVideo", {
+    opacity: 0,
+    duration: 1,
+    delay: 1,
+    x: 80
+  });
+
+  gsap.from("#stats", {
+    opacity: 0,
+    duration: 1,
+    delay: 1,
+    y: 80
+  }); 
+};
+
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
 
@@ -26,6 +43,8 @@ const hiddenElements = document.querySelectorAll('.notv');
 hiddenElements.forEach((el) => {
     observers.observe(el);
 })
+
+
 
 const productButtons = document.querySelectorAll(".eventSelected");
 const payment = document.querySelector(".payment");

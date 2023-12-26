@@ -715,8 +715,8 @@ textarea.input {
     right: 0;
     height: 680px;
     background: #fff;
-    border-top: 0.2rem solid #C4B5FD;
-    border-left: 0.2rem solid #C4B5FD;
+    border-top: 0.1rem solid #C4B5FD;
+    border-left: 0.1rem solid #C4B5FD;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     background: #121826;
@@ -805,10 +805,10 @@ textarea.input {
     <section id="header" class="header" id="home">
       
       <nav class="navbar">
-        <a href="#home">home</a>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#event">Event</a>
-        <a href="#contact">Contacts</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="md:flex md:right-20 md:top-5 md:absolute">
         <img src="assests/logo.png" alt="" class="h-10">
@@ -834,6 +834,7 @@ textarea.input {
         class="w-full h-full object-cover"
         style="top: -80px;"
         src="assests/Citronics.mp4"
+        id="myVideo"
       ></video>
     </div>
   
@@ -848,7 +849,7 @@ textarea.input {
   
   <!-- stats section -->
   <section class="bg-gray-900 px-6">
-    <motion.div style="top: -100px;" class="relative z-20">
+    <div style="top: -100px;" class="relative z-20"  id="stats">
       <div
         class="bg-gray-800 border-solid border-2 border-gray-600 rounded-lg md:flex md:mx-auto md:divide-x md:divide-gray-600"
         style="max-width: 878px; filter: drop-shadow(0 0 0.25rem #4B5563);"
@@ -875,7 +876,7 @@ textarea.input {
       <!-- <p class="text-gray-500 text-xs text-center mt-4">
         Metrics update real-time
       </p -->>
-    </motion.div>
+    </div>
   </section>
   
   <!-- cards Section -->
@@ -886,7 +887,7 @@ textarea.input {
         class="mt-2 space-y-8 md:space-y-0 md:flex md:space-x-8 md:justify-center "
       >
         <!-- card 1 -->
-        <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 flex flex-col notv" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
+        <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 flex flex-col notv" style="filter: drop-shadow(0 0 0.25rem #4B5563);" id="card1">
           <img class="w-full" src="assests/techincalEventGraphic.png" alt="" />
           <div style="background-color: #212936;" class="p-4 text-left h-full">
             <h3 class="text-lg text-purple-300 font-bold text-center text-2xl">Technical</h3>
@@ -912,13 +913,13 @@ textarea.input {
         </div>
 
           <!-- card 2-->
-        <div class="max-w-xs md:max-w-xs mx-auto md:mx-0 md:max-w-lg flex flex-col notv" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
+        <div class="max-w-xs md:max-w-xs mx-auto md:mx-0 md:max-w-lg flex flex-col notv" style="filter: drop-shadow(0 0 0.25rem #4B5563);" id="card2">
             <div  style="background-color: #212936;" class="p-4 text-left h-full flex flex-col items-center">
                 <div class="text-lg font-bold text-center mt-4 mb-4 text-purple-300 tracking-widest uppercase text-[30px]">
                     <h2 class="text-purple-300 font-bold text-2xl">ABOUT CITRONICS</h2>
                 </div>
                 <div class="flex flex-col">
-                  <p class="text-lg text-center text-gray-300 tracking-widest mb-4">
+                  <p class="text-s md:text-lg text-center text-gray-300 tracking-widest mb-4">
                   Citronics is an annual techno management fest of CDGI, Indore. The festival has a history of 15 golden years.
                   </p>
                   <div class="mt-4 md:w-[150px] md:h-[150px] md:mx-auto">
@@ -931,7 +932,7 @@ textarea.input {
             </div>
         </div>
         <!-- card 2 -->
-        <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 flex flex-col notv" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
+        <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 flex flex-col notv" style="filter: drop-shadow(0 0 0.25rem #4B5563);" id="card3">
           <img class="w-full" src="assests/managementEventGraphic.jpg" alt="" />
           <div style="background-color: #212936;" class="p-4 text-left h-full">
             <h3 class="text-lg text-purple-300 font-bold text-center text-2xl">Managment</h3>
@@ -1141,6 +1142,7 @@ textarea.input {
       <div class="flex  flex-col items-center md:flex md:flex-row md:mt-12 justify-between mt-4 mb-4 text-gray-300 tracking-widest">
       <div class="prize-money text-s md:text-lg">Prize: <span class="text-purple-300" id="prize-money"></span></div>
       <div class="participation-fees text-s md:text-lg">Entry Fees: <span class="text-purple-300" id="participation-fees"></span></div>
+      
     </div>
     </div>
   </div>
@@ -1266,7 +1268,12 @@ Celebrate the spirit of camaraderie and indulge in a feast for the senses at our
 
 </footer>
 
+
 <script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
+
 </body>
 
 </html>
