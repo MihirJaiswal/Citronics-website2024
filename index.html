@@ -986,7 +986,7 @@ textarea.input {
   </section>
 
 <!-- events section -->
-
+<div id="particles3-js" class="absolute w-full notv visi z-0"></div>
 <section class="service mx-auto mt-12 mb-12 align-center " id="service">
 <div class="box-container">
 <div class="service-info notv">
@@ -1358,6 +1358,58 @@ Celebrate the spirit of camaraderie and indulge in a feast for the senses at our
         distance: 150,
         color: '#ffffff',
         opacity: 0.3,
+        width: 0.7,
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: 'none',
+        random: true,
+        straight: false,
+        out_mode: 'out',
+      },
+    },
+    interactivity: {
+      events: {
+        onhover: {
+          enable: true,
+          mode: 'repulse',
+        },
+      },
+    },
+  });
+
+  particlesJS('particles3-js', {
+    particles: {
+      number: {
+        value: 50,
+      },
+      color: {
+        value: '#C4B5FD',
+      },
+      shape: {
+        type: 'edge',
+      },
+      opacity: {
+        value: 0.4,
+        random: true,
+        anim: {
+          enable: true,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: false,
+        },
+        random: true,
+      },
+      size: {
+        value: 5,
+        random: true,
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: '#ffffff',
+        opacity: 0.2,
         width: 0.7,
       },
       move: {
