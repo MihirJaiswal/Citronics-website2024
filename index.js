@@ -12,7 +12,7 @@ const image = new Image()
 image.src = 'assests/background.png'
 
 const playerImage = new Image();
-playerImage.src = 'assests/spaceShip.png';
+playerImage.src = 'assests/spaceShip2.png';
 
 class Sprite {
     constructor({ position, image, height, width }) {
@@ -54,9 +54,9 @@ function animate() {
     background.draw()
     
    
-    width = playerImage.width * 0.25; // Change 0.5 to your desired scale factor
-    height = playerImage.height * 0.25;
-    c.drawImage(playerImage, 150, 200, width, height);
+    width = playerImage.width * 0.50; // Change 0.5 to your desired scale factor
+    height = playerImage.height * 0.60;
+    c.drawImage(playerImage, 150, 150, width, height);
 
 
     if(keys.ArrowRight.pressed) background.position.x = background.position.x - 5
