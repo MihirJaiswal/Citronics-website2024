@@ -59,8 +59,8 @@ function animate() {
     c.drawImage(playerImage, 150, 200, width, height);
 
 
-    if(keys.ArrowRight.pressed) background.position.x = background.position.x - 4
-    else if(keys.ArrowLeft.pressed) background.position.x = background.position.x + 4
+    if(keys.ArrowRight.pressed) background.position.x = background.position.x - 5
+    else if(keys.ArrowLeft.pressed) background.position.x = background.position.x + 5
     
     
 }
