@@ -640,6 +640,75 @@ textarea.input {
   opacity: 1;
 }
 
+.slider {
+    position: absolute;
+    background: #4B5563;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    border: #4B5563 4px solid;
+    border-radius: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    filter: drop-shadow(0 0 0.25rem #4B5563);
+}
+
+.slider::before, .slider::after {
+    background: linear-gradient(to right,  0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider .slide-track {
+    position: absolute;
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: 156%;
+    height: 100%;
+    width: calc(250px * 14);
+
+}
+
+.slider .slide-track:hover {
+    animation-play-state: paused;
+}
+
+.slide img {
+    height: 100%;
+    width: 100%;
+    /* margin: 20px; */
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+
 
 /* Media Query for Minimum Width of 768px */
 @media (min-width: 768px) {
@@ -1158,9 +1227,9 @@ textarea.input {
 </div>
 </section>
 
-
  <!-- sponsor section section -->
- <section class="bg-gray-900 px-6 notv" id="event">
+ <div id="particles3-js" class="absolute w-full z-0"></div>
+ <section class="bg-gray-900 px-6 notv">
   <div style="top: -10px; filter: drop-shadow(0 0 0.25rem #4B5563);" class="relative z-0">
     <div
       class="bg-gray-800 border-solid border-2 border-gray-600 rounded-lg md:flex md:mx-auto md:divide-x md:divide-gray-600"
@@ -1168,6 +1237,44 @@ textarea.input {
     >
       <div class="text-center py-12 md:w-full">
         <h2 class="text-purple-300 font-bold text-5xl">Sponsor
+        </h2>
+      </div>
+    </div>
+    <!-- <p class="text-gray-500 text-xs text-center mt-4">
+      Metrics update real-time
+    </p -->>
+  </div>
+</section>
+<section class="bg-gray-900 px-6 notv w-100% h-100% notv w-100% mb-4">
+  <div class="slider">
+    <div class="slide-track">
+        <div class="slide"><img src="assests/funKart.jpg" alt=""></div>
+        <div class="slide"><img src="assests/funKart.jpg" alt=""></div>
+        <div class="slide"><img src="assests/funKart.jpg" alt=""></div>
+        <div class="slide"><img src="assests/funKart.jpg" alt=""></div>
+        <div class="slide"><img src="assests/funKart.jpg" alt=""></div>
+        <div class="slide"><img src="assests/funKart.jpg" alt=""></div>
+        <div class="slide"><img src="assests/funKart.jpg" alt=""></div>
+        <div class="slide"><img src="assests/funKart.jpg" alt=""></div>
+        
+
+    </div>
+</div>
+</section>
+
+<div class="flex justify-center">
+  <button type="button" class="text-purple-300 bg-gray-800 border-2 border-gray-600 hover:bg-gray-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-10 py-3 me-2 mb-12 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Wanna Sponsor ?</button>
+</div>
+
+ <!-- timeline section section -->
+ <section class="bg-gray-900 px-6 notv">
+  <div style="top: -10px; filter: drop-shadow(0 0 0.25rem #4B5563);" class="relative z-0">
+    <div
+      class="bg-gray-800 border-solid border-2 border-gray-600 rounded-lg md:flex md:mx-auto md:divide-x md:divide-gray-600"
+      style="max-width: 878px;"
+    >
+      <div class="text-center py-12 md:w-full">
+        <h2 class="text-purple-300 font-bold text-5xl">Timeline
         </h2>
       </div>
     </div>
@@ -1365,6 +1472,7 @@ Celebrate the spirit of camaraderie and indulge in a feast for the senses at our
       },
     },
   });
+  
   particlesJS('particles2-js', {
     particles: {
       number: {
@@ -1420,7 +1528,67 @@ Celebrate the spirit of camaraderie and indulge in a feast for the senses at our
       },
     },
   });
-
+ 
+  particlesJS('particles3-js', {
+    particles: {
+      number: {
+        value: 70,
+      },
+      color: {
+        value: '#C4B5FD',
+      },
+      shape: {
+        type: 'circle',
+      },
+      opacity: {
+        value: 20,
+        random: true,
+        anim: {
+          enable: true,
+          speed: 0.5,
+          opacity_min: 0.8,
+          sync: false,
+        },
+        random: true,
+      },
+      size: {
+        value: 2.5,
+        random: true,
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: '#28333d',
+        opacity: 50,
+        width: 0.4,
+        condensed_mode: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 600,
+        },
+      },
+      move: {
+        enable: true,
+        speed: 0.5,
+        attract: {
+          rotateX: 600,
+          rotateY: 1200,
+        },
+        direction: 'none',
+        random: true,
+        straight: false,
+        out_mode: 'out',
+      },
+    },
+    interactivity: {
+      events: {
+        onhover: {
+          enable: true,
+          mode: 'repulse',
+        },
+      },
+    },
+  });
  
 
 </script>

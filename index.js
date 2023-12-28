@@ -15,10 +15,13 @@ const playerImage = new Image();
 playerImage.src = 'assests/spaceShip.png';
 
 class Sprite {
-    constructor({ position, image }) {
+    constructor({ position, image, height, width }) {
         this.position = position
         this.image = image
+        this.width = width
+        this.height = height
     }
+
 
     draw() {
         c.drawImage(this.image, this.position.x, this.position.y)
@@ -30,7 +33,9 @@ const background = new Sprite({
         x: 0,
         y: 0
     },
-    image: image
+    image: image,
+    width: image.width,
+    height: image.height
 })
 
 
@@ -54,8 +59,8 @@ function animate() {
     c.drawImage(playerImage, 0, 200, width, height);
 
 
-    if(keys.ArrowRight.pressed) background.position.x = background.position.x - 5
-    else if(keys.ArrowLeft.pressed) background.position.x = background.position.x + 5
+    if(keys.ArrowRight.pressed) background.position.x = background.position.x - 4
+    else if(keys.ArrowLeft.pressed) background.position.x = background.position.x + 4
     
     
 }
