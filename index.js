@@ -9,7 +9,7 @@ c.fillStyle = 'white'
 c.fillRect(0, 0, canvas.width, canvas.height);
 
 const image = new Image()
-image.src = 'assests/background.jpg'
+image.src = 'assests/background.png'
 
 const playerImage = new Image();
 playerImage.src = 'assests/spaceShip.png';
@@ -56,7 +56,7 @@ function animate() {
    
     width = playerImage.width * 0.25; // Change 0.5 to your desired scale factor
     height = playerImage.height * 0.25;
-    c.drawImage(playerImage, 0, 200, width, height);
+    c.drawImage(playerImage, 150, 200, width, height);
 
 
     if(keys.ArrowRight.pressed) background.position.x = background.position.x - 4
