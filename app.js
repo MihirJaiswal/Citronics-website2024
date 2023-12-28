@@ -74,6 +74,10 @@ var y = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   document.querySelector("#days").innerHTML = days;
+  document.querySelector("#hours").innerHTML = hours;
+  document.querySelector("#minutes").innerHTML = minutes;
+  document.querySelector("#seconds").innerHTML = seconds;
+  
 
   if(distance < 0) {
     clearInterval(y);

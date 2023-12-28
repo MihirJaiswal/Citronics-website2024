@@ -52,7 +52,7 @@ const keys = {
 function animate() {
     requestAnimationFrame(animate);
     background.draw()
-    console.log('animate')
+    
    
     width = playerImage.width * 0.25; // Change 0.5 to your desired scale factor
     height = playerImage.height * 0.25;
@@ -76,7 +76,6 @@ window.addEventListener('keydown', (e) => {
             break
     }
 
-    console.log(keys)
 })
 
 window.addEventListener('keyup', (e) => {
@@ -89,5 +88,4 @@ window.addEventListener('keyup', (e) => {
             break
     }
 
-    console.log(keys)
 })
