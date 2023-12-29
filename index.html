@@ -217,12 +217,29 @@ button, h1, p {
 
 .service .box-container {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1rem;
+  background: url("assests/backgroundEvent.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
+.overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(18, 24, 38, 0.3), rgba(18, 24, 38, 0.3));
+}
+
 
 .service .box-container .service-info {
   height: 25rem;
@@ -1142,7 +1159,8 @@ textarea.input {
 
 <section class="service mx-auto mt-12 mb-12 align-center " id="service">
 <div class="box-container">
-<div class="service-info notv">
+  <div class="overlay"></div>
+<div class="service-info">
 <img src="assests/robotics.jpg" alt="">
 <div class="content">
     <h2>Robotics</h2>
@@ -1309,7 +1327,7 @@ textarea.input {
 </div>
 </div>
 
-<div class="separator-line1"></div>
+
 
  <!-- sponsor section section -->
  <div id="particles3-js" class="absolute w-full z-0"></div>
@@ -1459,7 +1477,7 @@ textarea.input {
   <div class="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
     
     
-    <div class="divide-y dark:divide-gray-700 md:w-3/4">
+    <div class="divide-y dark:divide-gray-700 md:w-3/4 border-2 border-gray-600 p-12 rounded-lg" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
       <div class="py-6 space-y-2 md:grid md:grid-cols-12 md:gap-8 md:space-y-0">
         <h3 class=" md:col-span-5 text-xl text-purple-300">What is the Techno Management Feast?</h3>
         <p class="md:pl-0 md:col-span-7">The feast converges technology and management, offering insights for diverse audiences. Explore cutting-edge trends, network with experts, and gain valuable knowledge at this dynamic event.</p>
