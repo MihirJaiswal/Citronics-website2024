@@ -234,8 +234,8 @@ button, h1, p {
   flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1rem;
-  background: url("assests/backgroundEvent.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   padding-top: 60px;
@@ -248,7 +248,8 @@ button, h1, p {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(rgba(18, 24, 38, 0.3), rgba(18, 24, 38, 0.3));
+  background: linear-gradient(rgba(18, 24, 38, 0.3), rgba(18, 24, 38, 0.1));
+  z-index: 0;
 }
 
 
@@ -756,13 +757,13 @@ textarea.input {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.qna{
-  background: url("assests/3579352.jpg");
+/*  .qna{
+  background: url("assests/bgforwebsite.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   
-}
+}  */
 
 
 /* Media Query for Minimum Width of 768px */
@@ -974,7 +975,11 @@ textarea.input {
 </style>
 
 <body>
-  <div id="preloader"></div>
+ 
+  <div class="relative">
+    <div id="preloader"></div>
+  </div>
+ 
   <section>
 </head>
 
@@ -1151,10 +1156,35 @@ textarea.input {
       </div>
     </div>
   </section>
+   <!-- sponsor section section -->
+ <div id="particles3-js" class="hidden w-full z-0 "></div>
+
+ <section class="bg-gray-900 px-6 notv w-100% h-100% notv w-100% mb-4">
+   <div class="slider">
+     <div class="slide-track">
+         <div class="slide"><img src="assests/sponsor7.jpg" alt=""></div>
+         <div class="slide"><img src="assests/sponsor2.jpg" alt=""></div>
+         <div class="slide"><img src="assests/sponsor8.jpg" alt=""></div>
+         <div class="slide"><img src="assests/sponsor4.jpg" alt=""></div>
+         <div class="slide"><img src="assests/sponsor5.jpg" alt=""></div>
+         <div class="slide"><img src="assests/sponsor6.png" alt=""></div>
+         <div class="slide"><img src="assests/sponsor1.jpg" alt=""></div>
+         <div class="slide"><img src="assests/sponsor11.svg" alt=""></div>
+         <div class="slide"><img src="assests/sponsor12.jpg" alt=""></div>
+         
+ 
+     </div>
+ </div>
+ </section>
+ 
+ <div class="flex justify-center">
+   <button type="button" class="text-purple-300 font-medium underline text-sm px-10 py-3 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><a href="#contact">Wanna Sponsor ?</a></button>
+ </div>
+ 
   <div class="separator-line1"></div>
  <!-- eventheading section -->
   <section class="bg-gray-900 px-6 notv" id="event">
-    <div style="top: -10px; filter: drop-shadow(0 0 0.25rem #4B5563);" class="relative z-0">
+    <div style="top: -10px; filter: drop-shadow(0 0 0.25rem #4B5563);" class="relative z-0 mt-16">
       <div
         class="bg-gray-800 border-solid border-2 border-gray-600 rounded-lg md:flex md:mx-auto md:divide-x md:divide-gray-600"
         style="max-width: 878px;"
@@ -1173,10 +1203,10 @@ textarea.input {
       </p -->
     </div>
   </section>
+  
 
 <!-- events section -->
-<div class="md:hidden text-gray-400 underline -mb-6 text-center pb-0 pt-2 ">Click above the card</div>
-<section class="service mx-auto mt-12 mb-12 align-center " id="service">
+<section class="service mx-auto mt-4 mb-2 align-center " id="service">
 <div class="box-container">
  
   <div class="overlay"></div>
@@ -1349,33 +1379,11 @@ textarea.input {
 
 
 
- <!-- sponsor section section -->
- <div id="particles3-js" class="absolute w-full z-0"></div>
-<section class="bg-gray-900 px-6 notv w-100% h-100% notv w-100% mb-4">
-  <div class="slider">
-    <div class="slide-track">
-        <div class="slide"><img src="assests/sponsor7.jpg" alt=""></div>
-        <div class="slide"><img src="assests/sponsor2.jpg" alt=""></div>
-        <div class="slide"><img src="assests/sponsor8.jpg" alt=""></div>
-        <div class="slide"><img src="assests/sponsor4.jpg" alt=""></div>
-        <div class="slide"><img src="assests/sponsor5.jpg" alt=""></div>
-        <div class="slide"><img src="assests/sponsor6.png" alt=""></div>
-        <div class="slide"><img src="assests/sponsor1.jpg" alt=""></div>
-        <div class="slide"><img src="assests/sponsor11.svg" alt=""></div>
-        <div class="slide"><img src="assests/sponsor12.jpg" alt=""></div>
-        
-
-    </div>
-</div>
-</section>
-
-<div class="flex justify-center">
-  <button type="button" class="text-purple-300 font-medium underline text-sm px-10 py-3 me-2 mb-12 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"><a href="#contact">Wanna Sponsor ?</a></button>
-</div>
-
+<div class="separator-line1 md:mb-8"></div>
 
  <!-- timeline section section -->
- <section class="bg-gray-900 px-6 notv mb-8">
+ <div id="particles4-js" class="absolute w-full z-0"></div>
+ <section class="bg-gray-900 px-6 notv mb-8 md:mt-16 md:mb-16">
   <div style="top: -10px; filter: drop-shadow(0 0 0.25rem #4B5563);" class="relative z-0">
     <div
       class="bg-gray-800 border-solid border-2 border-gray-600 rounded-lg md:flex md:mx-auto md:divide-x md:divide-gray-600"
@@ -1391,8 +1399,12 @@ textarea.input {
     </p -->
   </div>
 </section>
+<div class="hidden md:flex justify-center w-full md:mt-8 md:mb-16 align-center z-20" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
+  <canvas class="border-2 border-gray-600 rounded-lg"></canvas>
+  </div>
 
-<div class="md:hidden ml-2 mt-12 timig pt-18 pb-2">
+
+<div class="md:hidden ml-2 md:mt-12  timig pt-18 pb-2">
 <ol class="relative border-s border-gray-200 dark:border-gray-700 mr-2 mt-1">                  
   <li class="mb-10 ms-4 mr-32 bg-gray-700" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
       <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
@@ -1463,13 +1475,12 @@ textarea.input {
 </div>
 
 
-<div class="hidden md:flex justify-center w-full mt-4 mb-4 align-center z-20" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
-<canvas class="border-2 border-gray-600 rounded-lg"></canvas>
-</div>
 
 
+
+<div class="separator-line1"></div>
 <!-- eventheading section -->
-<section class="bg-gray-900 px-6 notv mt-16 pt-20  qna" id="event">
+<section class="bg-gray-900 px-6 notv mt-4 pt-20  qna" id="event">
   <div class="overlay"></div>
   <div style="top: -40px; filter: drop-shadow(0 0 0.25rem #4B5563);" class="relative z-0">
     <div
@@ -1494,7 +1505,7 @@ textarea.input {
   <div class="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
     
     
-    <div class="divide-y dark:divide-gray-700 md:w-3/4 md:border-2 md:border-gray-600 md:p-8 md:rounded-lg bg-gray-900" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
+    <div class="divide-y dark:divide-gray-700 md:w-3/4 md:border-2 md:border-gray-600 px-8 md:p-8 md:rounded-lg bg-gray-900" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
       <div class="py-6 space-y-2 md:grid md:grid-cols-12 md:gap-8 md:space-y-0">
         <h3 class=" md:col-span-5 text-xl text-purple-300">What is the Techno Management Feast?</h3>
         <p class="md:pl-0 md:col-span-7">The feast converges technology and management, offering insights for diverse audiences. Explore cutting-edge trends, network with experts, and gain valuable knowledge at this dynamic event.</p>
@@ -1788,6 +1799,67 @@ Celebrate the spirit of camaraderie and indulge in a feast for the senses at our
       },
       line_linked: {
         enable: true,
+        distance: 150,
+        color: '#28333d',
+        opacity: 50,
+        width: 0.4,
+        condensed_mode: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 600,
+        },
+      },
+      move: {
+        enable: true,
+        speed: 0.5,
+        attract: {
+          rotateX: 600,
+          rotateY: 1200,
+        },
+        direction: 'none',
+        random: true,
+        straight: false,
+        out_mode: 'out',
+      },
+    },
+    interactivity: {
+      events: {
+        onhover: {
+          enable: true,
+          mode: 'repulse',
+        },
+      },
+    },
+  });
+
+  particlesJS('particles4-js', {
+    particles: {
+      number: {
+        value: 200,
+      },
+      color: {
+        value: '#C4B5FD',
+      },
+      shape: {
+        type: 'circle',
+      },
+      opacity: {
+        value: 40,
+        random: true,
+        anim: {
+          enable: true,
+          speed: 0.5,
+          opacity_min: 0.8,
+          sync: false,
+        },
+        random: true,
+      },
+      size: {
+        value: 2.5,
+        random: true,
+      },
+      line_linked: {
+        enable: false,
         distance: 150,
         color: '#28333d',
         opacity: 50,
