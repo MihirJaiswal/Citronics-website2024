@@ -235,8 +235,9 @@ button, h1, p {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1rem;
   background-size: cover;
+  background: url("assests/backgroundEvent.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -248,7 +249,7 @@ button, h1, p {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(rgba(18, 24, 38, 0.3), rgba(18, 24, 38, 0.1));
+  background: linear-gradient(rgba(18, 24, 38, 0.3), rgba(18, 24, 38, 0.4));
   z-index: 0;
 }
 
@@ -272,6 +273,8 @@ button, h1, p {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  border: rgb(111, 108, 108) 1px solid;
+  filter: drop-shadow(0 0 0.15rem #535c6a);
 }
 
 .service .box-container .service-info .content {
@@ -757,13 +760,13 @@ textarea.input {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/*  .qna{
-  background: url("assests/bgforwebsite.png");
+ .qna{
+  background: url("assests/backgroundEvent.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   
-}  */
+}  
 
 
 /* Media Query for Minimum Width of 768px */
@@ -1209,7 +1212,7 @@ textarea.input {
 <section class="service mx-auto mt-4 mb-2 align-center " id="service">
 <div class="box-container">
  
-  <div class="overlay"></div>
+<div class="overlay"></div>
 <div class="service-info">
 <img src="assests/robotics.jpg" alt="">
 <div class="content">
@@ -1355,6 +1358,7 @@ textarea.input {
       </div>
 
 
+
 </section>
 
 <div class="payment md:w-50% text-white border-solid border-2 border-gray-600 rounded-lg">
@@ -1378,12 +1382,10 @@ textarea.input {
 </div>
 
 
-
-<div class="separator-line1 md:mb-8"></div>
-
+<div class="separator-line1 md:mb-16"></div>
  <!-- timeline section section -->
  <div id="particles4-js" class="absolute w-full z-0"></div>
- <section class="bg-gray-900 px-6 notv mb-8 md:mt-16 md:mb-16">
+ <section class="bg-gray-900 px-6 notv mb-8 md:mt-20 md:mb-16">
   <div style="top: -10px; filter: drop-shadow(0 0 0.25rem #4B5563);" class="relative z-0">
     <div
       class="bg-gray-800 border-solid border-2 border-gray-600 rounded-lg md:flex md:mx-auto md:divide-x md:divide-gray-600"
@@ -1480,7 +1482,7 @@ textarea.input {
 
 <div class="separator-line1"></div>
 <!-- eventheading section -->
-<section class="bg-gray-900 px-6 notv mt-4 pt-20  qna" id="event">
+<section class="bg-gray-900 px-6 notv mt-4 pt-20 relative qna" id="event">
   <div class="overlay"></div>
   <div style="top: -40px; filter: drop-shadow(0 0 0.25rem #4B5563);" class="relative z-0">
     <div
@@ -1501,8 +1503,10 @@ textarea.input {
   </div>
 </section>
 
+
 <section class="dark:bg-gray-800 text-gray-300 pb-12 -mt-28 qna" id="FAQ's">
-  <div class="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
+  <div class="overlay"></div>
+  <div class="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8 relative">
     
     
     <div class="divide-y dark:divide-gray-700 md:w-3/4 md:border-2 md:border-gray-600 px-8 md:p-8 md:rounded-lg bg-gray-900" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
@@ -1657,7 +1661,7 @@ Celebrate the spirit of camaraderie and indulge in a feast for the senses at our
   particlesJS('particles-js', {
     particles: {
       number: {
-        value: 70,
+        value: 300,
       },
       color: {
         value: '#C4B5FD',
@@ -1666,26 +1670,27 @@ Celebrate the spirit of camaraderie and indulge in a feast for the senses at our
         type: 'circle',
       },
       opacity: {
-        value: 20,
+        value: 80,
         random: true,
         anim: {
           enable: true,
           speed: 0.5,
-          opacity_min: 0.8,
-          sync: false,
+          opacity_min: 1.8,
+          sync: true,
         },
         random: true,
       },
       size: {
-        value: 2.5,
+        value: 2,
         random: true,
+  
       },
       line_linked: {
         enable: true,
-        distance: 150,
+        distance: 100,
         color: '#28333d',
-        opacity: 50,
-        width: 0.4,
+        opacity: 1.5,
+        width: 0.1,
         condensed_mode: {
           enable: false,
           rotateX: 600,
@@ -1694,7 +1699,8 @@ Celebrate the spirit of camaraderie and indulge in a feast for the senses at our
       },
       move: {
         enable: true,
-        speed: 0.5,
+        speed: 0.3,
+        direction: 'none',
         attract: {
           rotateX: 600,
           rotateY: 1200,
@@ -1710,6 +1716,23 @@ Celebrate the spirit of camaraderie and indulge in a feast for the senses at our
         onhover: {
           enable: true,
           mode: 'repulse',
+        },
+        onclick: {
+          enable: true,
+          mode: 'push',
+        },
+        resize: true,
+      },
+      modes: {
+        repulse: {
+          distance: 200,
+          duration: 0.4,
+        },
+        push: {
+          particles_nb: 4,
+        },
+        remove: {
+          particles_nb: 2,
         },
       },
     },
