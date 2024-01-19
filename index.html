@@ -441,18 +441,23 @@ button, h1, p {
   width: 100%;
   max-width: 1200px;
   background-color: #4B5563;
-  border-radius: 40px;
+  background: url("assests/bg.jpg");
+  background-repeat: initial;
+  border-radius: 30px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   filter: drop-shadow(0 0 0.25rem #535c6a);
+  border: #4B5563 1px solid;
+
 }
 
 .contact-form {
   background-color: #1F2937;
   position: relative;
+  border: #4B5563 1px solid;
 }
 
 .contact-form:before {
@@ -460,8 +465,10 @@ button, h1, p {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #1F2937;
-  transform: rotate(45deg);
+  background-color: #ecebdf;
+  filter: drop-shadow(0 0 0.45rem #fae60a);
+  transform: rotate(360deg);
+  border-radius: 50%;
   top: 50px;
   left: -13px;
 }
