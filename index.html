@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="dist/output.css">
     <title>Citronics2k24</title>
     <link rel="icon" type="image/x-icon" href="assests/favicon.png">
+
   
     <style>
       /* Global Styles */
@@ -210,6 +211,16 @@ button, h1, p {
 
 .header #menu-btn {
   display: none;
+}
+
+#preloader{
+  background: #121826 url("assests/loader.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
 }
 
 /* service */
@@ -956,13 +967,14 @@ textarea.input {
   list-style-type: circle;
 }
 
+
 }
 
 
 </style>
 
 <body>
-  
+  <div id="preloader"></div>
   <section>
 </head>
 
@@ -1810,10 +1822,16 @@ Celebrate the spirit of camaraderie and indulge in a feast for the senses at our
   });
 
 </script>
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function(){
+    loader.style.display = "none";
+  })
+</script>
 <script src="app.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
-
 </html>

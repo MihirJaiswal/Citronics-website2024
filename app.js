@@ -1,3 +1,4 @@
+
 const slider= document.querySelector('.slider');
 const innerSlider = document.querySelector('.slide-track');
 let x;
