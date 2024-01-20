@@ -153,7 +153,7 @@ productButtons.forEach(button => {
     services.forEach(service => {
       service.style.filter = "blur(8px)";
     });
-    form.style.filter = "blur(8px)";
+  
   });
 });
 
@@ -162,7 +162,7 @@ close.addEventListener("click", () => {
   services.forEach(service => {
     service.style.filter = "blur(0px)";
   });
-  form.style.filter = "blur(0px)";
+ 
 
 });
 

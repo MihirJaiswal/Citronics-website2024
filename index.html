@@ -361,8 +361,8 @@ button, h1, p {
 }
 
 .payment {
-  width: 800px;
-  height: 650px;
+  width: 850px;
+  height: 690px;
   background-color: #121826;
   filter: drop-shadow(0 0 0.25rem #535c6a);
   border: 1px solid #C4B5FD;
@@ -374,7 +374,7 @@ button, h1, p {
   border-radius: 5%;
   margin: auto;
   padding: 10px 50px;
-  display: none;
+  display: flex;
   flex-direction: column;
   -webkit-box-shadow: 0px 0px 26px -3px rgba(0, 0, 0, 0.8);
   box-shadow: 0px 0px 26px -3px rgba(0, 0, 0, 0.8);
@@ -982,6 +982,28 @@ textarea.input {
   list-style-type: circle;
 }
 
+.payment-container{
+  background: url("assests/astrobg.png");
+  background-size: cover;
+}
+
+.payment{
+  height: max-content;
+  width: max-content+1rem;
+  position: relative; 
+  top: -35rem;
+  font-size:small;
+  padding: 30px;
+}
+.event-description{
+  border: solid #535c6a 2px;
+  border-radius: 20px;
+  padding: 20px;
+  background: #6d7c92;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 }
 
@@ -1377,18 +1399,26 @@ textarea.input {
 
 </section>
 
+<div class="payment-container">
 <div class="payment md:w-50% text-white border-solid border-2 border-gray-600 rounded-lg">
   <div class="event-card">
     <img src="assests/logo.png" alt="Event Image" class="mt-2 mx-auto">
     <div class="event-details">
       <img :src="isLoaded ? `${imageSrc}&w=1770&q=80` : `${imageSrc}&w=10&q=80`" :class="{ '[image-rendering:_auto]': isLoaded, '[image-rendering:_pixelated]': !isLoaded}"  x-intersect.full="isLoaded = true" class="h-40 mx-auto mt-4 mb-4 rounded-lg " id="event-image">
-      <div class="event-name text-purple-300 font-bold md:text-3xl text-2xl text-center mt-4 mb-4">Event: <span class="text-2xl md:text-3xl" id="event-name"></span></div>
+      <div class="event-name text-purple-300 font-bold md:text-3xl text-xl text-center mt-4 mb-4">Event: <span class="text-xl md:text-3xl" id="event-name"> </span></div>
       <div class="event-description text-gray-300 text-center mb-4 text-lg tracking-widest text-[30px]">
-        <span class="md:text-2xl text-S break-words column" id="event-description"></span>
+        <span class="md:text-2xl md:mt-6 text-s break-words column mb-8" id="event-description"></span>
       </div>
-      <div class="flex  flex-col items-center md:flex md:flex-row md:mt-12 justify-between mt-4 mb-4 text-gray-300 tracking-widest">
+      <div class="flex items-center md:flex md:flex-row md:mt-12 justify-between mt-4 mb-4 md:mb-2 text-gray-300 tracking-widest">
       <div class="prize-money text-s md:text-lg">Prize: <span class="text-purple-300" id="prize-money"></span></div>
       <div class="participation-fees text-s md:text-lg">Entry Fees: <span class="text-purple-300" id="participation-fees"></span></div>
+    </div>
+    <div class="flex items-center md:flex md:flex-row justify-between mt-4 md:mt-2 mb-4 text-gray-300 tracking-widest">
+      <div class="event-date text-s md:text-lg">Event Head: <span class="text-purple-300" id="event-date"></span></div>
+      <div class="event-time text-s md:text-lg"><button class="text-white font-bold font-bold " id="btn" onclick="showModal()"> Rules <i class="fa-solid fa-circle-info"></i> </button></div>
+    </div>
+    <div class="flex justify-center">
+    <button class="w-40 bg-purple-300 hover:bg-purple-400 text-gray-800 font-bold font-bold py-2 px-4 rounded-lg" id="btn" onclick="showModal()">Register</button>
       
     </div>
     </div>
