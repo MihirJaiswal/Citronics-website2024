@@ -836,6 +836,11 @@ textarea.input {
   border-radius: 10px;
 }
 
+.cardpara{
+  font-size: 1.05rem; /* 16px */
+  line-height: 26px; /* 24px */
+}
+
 
 /* Media Query for Minimum Width of 768px */
 @media (min-width: 768px) {
@@ -1114,6 +1119,12 @@ textarea.input {
   border-radius: 10px;
 }
 
+.cardpara{
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+
 }
 
 
@@ -1232,22 +1243,22 @@ textarea.input {
         <!-- card 1 -->
         <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 md:flex flex-col notv hidden" style="filter: drop-shadow(0 0 0.25rem #4B5563);" id="card1">
           <img class="w-full" src="assests/techincalEventGraphic.png" alt="" />
-          <div style="background-color: #212936;" class="p-4 text-left h-full">
-            <h3 class="text-lg text-purple-300 font-bold text-center text-2xl">Technical</h3>
-            <p class="text-sm mt-4 text-center" style="color: #D5D5DA">
+          <div style="background-color: #212936;" class="p-4 text-left h-full ">
+            <h3 class="text-purple-300 font-bold text-center text-2xl">Technical</h3>
+            <p class="cardpara mt-4 text-center" style="color: #D5D5DA">
                 Cutting-edge tech showcase: Innovation, coding, robotics, AI, and more!
             </p>
   
             <div class="flex space-x-24 mt-12 h-full">
               <div>
-                <p class="text-sm" style="color: #9DA3AE;">
+                <p class="text-sm text-gray-200">
                   20+ Events
                 </p>
                <!--  <p class="text-xs" style="color: #D0D3D8">2:03 hours</p> -->
               </div>
               <div>
-                <p class="text-sm" style="color: #9DA3AE;">
-                 Win upto 2 Lakh
+                <p class="text-sm text-purple-300">
+                 Win upto 3 Lakhs
                 </p>
               <!--   <p class="text-xs" style="color: #D0D3D8">Beginner</p> -->
               </div>
@@ -1262,13 +1273,13 @@ textarea.input {
                     <h2 class="text-purple-300 font-bold text-2xl">ABOUT CITRONICS</h2>
                 </div>
                 <div class="flex flex-col">
-                  <p class="text-s md:text-lg text-center text-gray-300 tracking-widest mb-4">
+                  <p class="cardpara text-center text-gray-300 tracking-widest mb-4">
                   Citronics is an annual techno management fest of CDGI, Indore. The festival has a history of 15 golden years.
                   </p>
                   <div class="mt-4 md:w-[350px] md:h-[150px] md:mx-auto">
                   <img src="assests/logo.png" alt="">
                   </div >
-                  <p class="text-lg text-center text-gray-300 tracking-widest mt-8 ">
+                  <p class="cardpara text-center text-gray-300 tracking-widest mt-8 ">
                     Citronics provide the right platform for students to showcase their prowess and compete not only at the state level but also with students at national level.
                   </p>
                 </div>
@@ -1278,20 +1289,20 @@ textarea.input {
         <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 md:flex flex-col notv hidden" style="filter: drop-shadow(0 0 0.25rem #4B5563);" id="card3">
           <img class="w-full" src="assests/managementEventGraphic.jpg" alt="" />
           <div style="background-color: #212936;" class="p-4 text-left h-full">
-            <h3 class="text-lg text-purple-300 font-bold text-center text-2xl">Managment</h3>
-            <p class="text-sm mt-4 text-center" style="color: #D5D5DA">
+            <h3 class="text-purple-300 font-bold text-center text-2xl">Managment</h3>
+            <p class="cardpara md:text-2xl mt-4 text-center" style="color: #D5D5DA">
                 Strategic leadership, teamwork, and problem-solving in dynamic business scenarios.
             </p>
   
             <div class="flex space-x-24 mt-12">
               <div>
-                <p class="text-sm" style="color: #9DA3AE;">
+                <p class="text-sm text-gray-200">
                   22+ Events
                 </p>
                <!--  <p class="text-xs" style="color: #D0D3D8">6:03 hours</p> -->
               </div>
               <div>
-                <p class="text-sm" style="color: #9DA3AE;">
+                <p class="text-sm text-purple-300">
                   Win upto 2.5 Lakh
                 </p>
                 <!-- <p class="text-xs" style="color: #D0D3D8">Beginner</p> -->
@@ -1486,7 +1497,7 @@ textarea.input {
         </ol>
     </div>
     </div>
-    <div class="service-info notv">
+    <div class="service-info notv mr-10">
       <img src="assests/managment.jpg" alt="">
       <div class="content">
           <h2>Managment</h2>
@@ -1518,7 +1529,7 @@ textarea.input {
     </div>
     <div class="flex items-center md:flex md:flex-row justify-between mt-4 md:mt-2 mb-4 text-gray-300 tracking-widest">
       <div class="event-date text-s md:text-lg">Event Head: <span class="text-purple-300" id="event-date"></span></div>
-      <div class="event-time text-s md:text-lg"><button class="text-white font-bold font-bold " id="rulebtn" onclick="showModal()"> Rules <i class="fa-solid fa-circle-info"></i> </button></div>
+      <div class="event-time text-s md:text-lg"><button class="text-white font-bold font-bold " id="rulebtn"> Rules <i class="fa-solid fa-circle-info"></i> </button></div>
     </div>
     <div class="flex justify-center">
     <button class="w-40 bg-purple-300 hover:bg-purple-400 text-gray-800 font-bold font-bold py-2 px-4 rounded-lg" id="btn" onclick="showModal()">Register</button>
