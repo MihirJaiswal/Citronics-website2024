@@ -841,6 +841,50 @@ textarea.input {
   line-height: 26px; /* 24px */
 }
 
+.register {
+  width: 850px;
+  height: 690px;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 0.25rem #535c6a);
+  border: 1px solid #C4B5FD;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5%;
+  margin: auto;
+  padding: 10px 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 26px -3px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 26px -3px rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+.closeregister{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: rgb(97, 94, 94);
+  color: white;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+
 
 /* Media Query for Minimum Width of 768px */
 @media (min-width: 768px) {
@@ -1122,6 +1166,30 @@ textarea.input {
 .cardpara{
   font-size: 0.875rem; /* 14px */
   line-height: 1.25rem; /* 20px */
+}
+
+.register{
+  width: 98%;
+  height:98%;
+  padding: 10px 20px;
+}
+.register-card{
+  height: 100%;
+  width: 100%;
+}
+.closeregister {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: rgb(97, 94, 94);
+  color: white;
+  top: 40px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 
@@ -1535,7 +1603,7 @@ textarea.input {
       <div class="event-time text-s md:text-lg"><button class="text-white font-bold font-bold " id="rulebtn"> Rules <i class="fa-solid fa-circle-info"></i> </button></div>
     </div>
     <div class="flex justify-center">
-    <button class="w-40 bg-purple-300 hover:bg-purple-400 text-gray-800 font-bold font-bold py-2 px-4 rounded-lg" id="btn" onclick="showModal()">Register</button>
+    <button class="w-40 bg-purple-300 hover:bg-purple-400 text-gray-800 font-bold font-bold py-2 px-4 rounded-lg" id="registerbtn" onclick="showModal()">Register</button>
       
     </div>
     </div>
@@ -1547,11 +1615,11 @@ textarea.input {
 <!-- rules -->
 <div class="rules-container">
   <div class="rules md:w-50% text-white border-solid border-2 border-gray-600 rounded-lg">
-    <div class="text-purple-300 font-bold md:text-3xl text-xl text-center mt-4 mb-4 uppercase">Rules</div>
+    <div class="text-purple-300 font-semibold md:text-3xl text-xl text-center mt-4 mb-4 uppercase">Rules</div>
     <div class="rules-card">
      
       <div class="p-10">
-         <ul class="rulesul text-white font-bold mb-4 text-lg list-disc md:list-disc tracking-widest text-[30px] break-words overflow-hidden md:overflow-x">
+         <ul class="rulesul text-white font-bold mb-4 text-lg tracking-widest text-[30px] break-words overflow-hidden md:overflow-x">
           <li class="mb-4 ">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dolorem!</p>
           </li>
@@ -1561,7 +1629,7 @@ textarea.input {
           <li class="mb-4 ">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, odio?</p>
           </li>
-          <li class="mb-4 ">
+          <li class="mb-4">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, animi.</p>
           </li>
           <li class="mb-4 ">
@@ -1577,6 +1645,58 @@ textarea.input {
   </div>
   </div>
   <!-- rules -->
+
+  <!-- register -->
+  <div class="register-container">
+    <div class="register text-white bg-black border-solid border-2 border-gray-600 rounded-lg overflow-hidden"  style="background: url(assests/registerbg.jpg);
+    background-position: center;
+    background-size: cover;">
+      <div class="text-purple-300 font-semibold text-3xl mt-4 text-center uppercase">Register</div>
+      <div class="register-card flex flex-col justify-between md:flex-row overflow-x-auto">
+        <form class="w-1/1.5 md:mt-6  md:mt-0" method="POST">
+          <div>
+              <label class="block font-semibold text-purple-300" for="name">Name</label>
+              <input class="w-full shadow-inner bg-gray-400 rounded-lg placeholder-gray-300 text-l p-2 border-none block mt-1 w-full" id="name" type="text" name="name" required="required" autofocus="autofocus" placeholder="Mihir Jaiswal">
+          </div>
+
+          <div class="mt-4">
+              <label class="block font-semibold text-purple-300" for="email">Email</label>
+              <input class="w-full shadow-inner bg-gray-400 rounded-lg placeholder-gray-300 text-l p-2 border-none block mt-1 w-full" id="email" type="email" name="email" required="required" placeholder="abc@gmail.com">
+          </div>
+
+          <div class="mt-4">
+              <label class="block font-semibold text-purple-300" for="number">Phone Number</label>
+              <input class="w-full shadow-inner bg-gray-400 rounded-lg placeholder-gray-300 text-xl p-2 border-none block mt-1 w-full" id="password" type="password" name="password" required="required" autocomplete="new-password">
+          </div>
+
+          <div class="flex md:flex-col gap-4 md:flex-start justify-between mt-8">
+             <button class="w-[40px] bg-purple-300 hover:bg-purple-400 text-gray-800 font-bold font-bold py-2 px-4 rounded-lg">Next</button>
+              <a class="md:text-sm md:underline text-purple-300">
+                  Already registered?
+              </a>
+          </div>
+      </form>
+
+      <aside class="w-1/1.5 md:h-72 h-40 md:w-1/2">
+        <div class="bg-gray-800 rounded-lg border border-1 p-6 border-gray-200 opacity-90 md:mt-16">
+            <h2 class="font-bold text-2xl">Instructions</h2>
+            <ul class="list-disc mt-4 list-outside text-bas ">
+                <li class="mb-2">All participants must provide a valid email address and password to create an account.</li>
+                <li class="mb-2">All participants is required to present in the event on time.</li>
+                <li class="mb-2">All participants must be 18 years of age or older.</li>
+                <li>All participants must carry a valid ID card or passport"></li>
+            </ul>
+        </div>
+    </aside>
+       
+      </div>
+      <img class="hidden md:flex border border-1 border-white p-4" src="assests/logo.png" alt="">
+      <span class="closeregister"><i class="fa fa-arrow-left text-black bg-white border border-2 rounded-full" aria-hidden="true"></i></span>
+    </div>
+    </div>
+  <!-- register -->
+
+
 
 
 

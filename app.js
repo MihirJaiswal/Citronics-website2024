@@ -178,6 +178,18 @@ closeForm.addEventListener("click", () => {
   rules.style.display = "none";
 });
 
+/* register */
+const register = document.querySelector(".register");
+const registerbtn = document.querySelector("#registerbtn");
+
+registerbtn.addEventListener("click", () => {
+  register.style.display = "flex";
+});
+
+const closeregister = document.querySelector(".closeregister");
+closeregister.addEventListener("click", () => {
+  register.style.display = "none";
+});
 
 let eventname = document.querySelector("#event-name")
 let eventdescription = document.querySelector("#event-description")
