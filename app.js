@@ -213,26 +213,6 @@ Maze.addEventListener("click", () => {
   participationFees.innerHTML = "2000"
   eventImage.src = "assests/mazeSolver.jpg"
 })
-
-let Pick = document.querySelector("#Pick")
-
-Pick.addEventListener("click", () => {
-  eventname.innerHTML = "Pick Place"
-  eventdescription.innerHTML = "Pick Place: A pick and place robot is designed to pick and place objects on a table"
-  prizeMoney.innerHTML = "500"
-  participationFees.innerHTML = "2000"
-  eventImage.src = "assests/pickPlace.jpg"
-})
-
-let Electronic = document.querySelector("#Electronic")
-
-Electronic.addEventListener("click", () => {
-  eventname.innerHTML = "Electronic Junk Yard"
-  eventdescription.innerHTML = "Electronic Junk Yard: A electronic junk yard robot is designed to collect electronic junk."
-  prizeMoney.innerHTML = "500"
-  participationFees.innerHTML = "2000"
-  eventImage.src = "assests/JunkYard.jpg"
-})
  
 
 let Code = document.querySelector("#Code")
@@ -243,16 +223,6 @@ Code.addEventListener("click", () => {
   prizeMoney.innerHTML = "200"
   participationFees.innerHTML = "2000"
   eventImage.src = "assests/codehunter.jpeg"
-})
-
-let Quiz = document.querySelector("#Quiz")
-
-Quiz.addEventListener("click", () => {
-  eventname.innerHTML = "Quizohile"
-  eventdescription.innerHTML = "Quizohile: A quiz game that tests your knowledge."
-  prizeMoney.innerHTML = "200"
-  participationFees.innerHTML = "2000"
-  eventImage.src = "assests/Quiz.jpg"
 })
  
 
@@ -288,16 +258,6 @@ Simon.addEventListener("click", () => {
 })
 
 
-let jumble = document.querySelector("#jumble")
-
-jumble.addEventListener("click", () => {
-  eventname.innerHTML = "Jumble Keys"
-  eventdescription.innerHTML = "Jumble Keys: A jumble keys game where participants work to solve puzzles."
-  prizeMoney.innerHTML = "200"
-  participationFees.innerHTML = "2000"
-  eventImage.src = "assests/jumbleKeys.jpg"
-})
- 
 
 let musical = document.querySelector("#musical")
 
@@ -331,15 +291,6 @@ music.addEventListener("click", () => {
   eventImage.src = "assests/musicVoice.jpg"
 })
 
-let booth = document.querySelector("#booth")
-
-booth.addEventListener("click", () => {
-  eventname.innerHTML = "selfie booth"
-  eventdescription.innerHTML = "Selfie booth: A trendy space to capture moments, with props, lights, and backdrops for personalized snapshots."
-  prizeMoney.innerHTML = "70000"
-  participationFees.innerHTML = "5000"
-  eventImage.src = "assests/selfieBooth.jpg"
-})
 
 let lips = document.querySelector("#lips")
 
@@ -372,15 +323,6 @@ Chess.addEventListener("click", () => {
   eventImage.src = "assests/chessEvent.jpg"
 })
 
-let Carrom = document.querySelector("#Carrom")
-
-Carrom.addEventListener("click", () => {
-  eventname.innerHTML = "Carrom"
-  eventdescription.innerHTML = "Carrom: Flick, strike, and pocket precision coins on a smooth board, blending skill and strategy for victory."
-  prizeMoney.innerHTML = "70000"
-  participationFees.innerHTML = "5000"
-  eventImage.src = "assests/carrom.jpg"
-})
 
 let Badminton = document.querySelector("#Badminton")
 
@@ -414,16 +356,6 @@ Rangoli.addEventListener("click", () => {
   eventImage.src = "assests/rangoli.jpg"
 })
   
-
-let tennis = document.querySelector("#tennis")
-
-tennis.addEventListener("click", () => {
-  eventname.innerHTML = "Office Tennis"
-  eventdescription.innerHTML = "Office Tennis: A classic game of tennis, with a focus on speed, accuracy, and strategic play."
-  prizeMoney.innerHTML = "70000"
-  participationFees.innerHTML = "5000"
-  eventImage.src = "assests/officeTennis.jpg"
-})
 
 let jenga = document.querySelector("#jenga")
 
