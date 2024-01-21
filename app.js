@@ -166,6 +166,18 @@ close.addEventListener("click", () => {
 
 });
 
+const rules = document.querySelector(".rules");
+const btn = document.querySelector("#rulebtn");
+
+btn.addEventListener("click", () => {
+  rules.style.display = "flex";
+});
+
+const closeForm = document.querySelector(".goback");
+closeForm.addEventListener("click", () => {
+  rules.style.display = "none";
+});
+
 
 let eventname = document.querySelector("#event-name")
 let eventdescription = document.querySelector("#event-description")
