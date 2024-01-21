@@ -278,7 +278,7 @@ button, h1, p {
 }
 
 .service .box-container .service-info .content {
-  background: #1F2937;
+  background: #0d0d0d;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -1053,7 +1053,7 @@ textarea.input {
 }
 
 .service .box-container .service-info .content {
-  background: #1F2937;
+  background: rgb(16, 15, 15);
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -1243,7 +1243,7 @@ textarea.input {
         <!-- card 1 -->
         <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 md:flex flex-col notv hidden" style="filter: drop-shadow(0 0 0.25rem #4B5563);" id="card1">
           <img class="w-full" src="assests/techincalEventGraphic.png" alt="" />
-          <div style="background-color: #212936;" class="p-4 text-left h-full ">
+          <div style="background-color: #212936; background: url(assests/bg.jpg);" class="p-4 text-left h-full ">
             <h3 class="text-purple-300 font-bold text-center text-2xl">Technical</h3>
             <p class="cardpara mt-4 text-center" style="color: #D5D5DA">
                 Cutting-edge tech showcase: Innovation, coding, robotics, AI, and more!
@@ -1268,18 +1268,22 @@ textarea.input {
 
           <!-- card 2-->
         <div class="max-w-md md:max-w-lg mx-auto md:mx-0 md:max-w-lg flex flex-col notv " style="filter: drop-shadow(0 0 0.25rem #4B5563);" id="card2">
-            <div  style="background-color: #212936;" class="p-4 text-left h-full flex flex-col items-center">
+            <div  style="background-color: #212936;
+                        background: url(assests/aboutbg.jpg);
+                        background-position: center;
+                        background-size: cover;"
+             class="p-4 text-left h-full flex flex-col items-center">
                 <div class="text-lg font-bold text-center mt-4 mb-4 text-purple-300 tracking-widest uppercase text-[30px]">
                     <h2 class="text-purple-300 font-bold text-2xl">ABOUT CITRONICS</h2>
                 </div>
                 <div class="flex flex-col">
-                  <p class="cardpara text-center text-gray-300 tracking-widest mb-4">
+                  <p class="cardpara text-center text-gray-300 tracking-widest mb-4 bg-gray-900 rounded-lg p-4 opacity-90">
                   Citronics is an annual techno management fest of CDGI, Indore. The festival has a history of 15 golden years.
                   </p>
                   <div class="mt-4 md:w-[350px] md:h-[150px] md:mx-auto">
-                  <img src="assests/logo.png" alt="">
+                  <img class="border border-2 border-white" src="assests/logo.png" alt="">
                   </div >
-                  <p class="cardpara text-center text-gray-300 tracking-widest mt-8 ">
+                  <p class="cardpara text-center text-gray-300 tracking-widest mt-8 bg-gray-900 rounded-lg p-4 opacity-90">
                     Citronics provide the right platform for students to showcase their prowess and compete not only at the state level but also with students at national level.
                   </p>
                 </div>
@@ -1288,7 +1292,7 @@ textarea.input {
         <!-- card 2 -->
         <div class="max-w-xs mx-auto md:mx-0 md:w-1/3 md:flex flex-col notv hidden" style="filter: drop-shadow(0 0 0.25rem #4B5563);" id="card3">
           <img class="w-full" src="assests/managementEventGraphic.jpg" alt="" />
-          <div style="background-color: #212936;" class="p-4 text-left h-full">
+          <div style="background-color: #212936; background: url(assests/bg.jpg);" class="p-4 text-left h-full">
             <h3 class="text-purple-300 font-bold text-center text-2xl">Managment</h3>
             <p class="cardpara md:text-2xl mt-4 text-center" style="color: #D5D5DA">
                 Strategic leadership, teamwork, and problem-solving in dynamic business scenarios.
@@ -1370,8 +1374,7 @@ textarea.input {
 <!-- events section -->
 <section class="service mx-auto mt-4 mb-2 align-center " id="service">
 <div class="box-container">
- 
-<div class="overlay"></div>
+
 <div class="service-info">
 <img src="assests/robotics.jpg" alt="">
 <div class="content">
