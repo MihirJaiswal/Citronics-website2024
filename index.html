@@ -261,7 +261,7 @@ button, h1, p {
   position: relative;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   padding: 20px;
-  filter: drop-shadow(0 0 0.25rem #535c6a);
+  filter: drop-shadow(0 0 0.25rem #535c6a); 
 }
 
 .service .box-container .service-info:hover .content {
@@ -289,7 +289,7 @@ button, h1, p {
   height: 100%;
   width: 100%;
   text-align: center;
-  border: 0.2rem solid #4B5563;
+  border: 0.2rem solid #4B5563; 
   display: none;
   margin-right: 3rem;
   opacity: 0.9;
@@ -944,26 +944,33 @@ textarea.input {
     overflow-y: hidden;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-    gap: 0.5rem;
+    gap: 2rem;
     scroll-snap-type: x mandatory;
     scroll-snap-stop: always;
     scroll-padding: 1rem;
+    scroll-behavior:auto;
   } 
 
   .service .box-container .service-info{
-    flex: 0 0 auto;
+    flex: 0 0 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 20rem;
     width: 16rem;
     scroll-snap-align: start;
-  
+    border: none;
+    padding: 0;
+    margin-left: 15px;
   }
-
+  
   .service .box-container .service-info h2 {
   font-size: 1rem;
   color: #C4B5FD;
   text-transform: uppercase;
   margin-bottom: 0;
-  padding: 1rem 0;
+  padding: 0;
   line-height: 2;
   animation: fadeIn 0.2s linear backwards 0.2s;
   line-height: 2;
@@ -971,6 +978,7 @@ textarea.input {
 }
 
 .service .box-container .service-info ol {
+  margin-top: 0;
   font-size: 0.8rem;
   color: #ffffff;
   line-height: 2;
@@ -981,6 +989,30 @@ textarea.input {
   animation: fadeIn 0.2s linear backwards 0.8s;
   list-style-type: circle;
 }
+
+.service .box-container .service-info .content {
+  background: #1F2937;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8.2rem;
+  left: 1.9rem ;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.2s linear;
+  height: 75%;
+  width: 75%;
+  text-align: center;
+  border: 0.2rem solid #4B5563;
+  display: flex;
+  opacity: 0.9;
+  padding: 10px;
+  transition: 0.2s linear;
+}
+
 
 .payment-container{
   background: url("assests/astrobg.png");
@@ -1260,8 +1292,6 @@ textarea.input {
         <li class="eventSelected" id="Robo-war">Robo War</li>
         <li class="eventSelected" id="Line">Line Follwer</li>
         <li class="eventSelected" id="Maze">Maze Solver</li>
-        <li class="eventSelected" id="Pick">Pick Place</li>
-        <li class="eventSelected" id="Electronic">Electronic Yard</li>
     </ol>
 </div>
 </div>
@@ -1271,11 +1301,9 @@ textarea.input {
     <h2>Software</h2>
     <ol>
         <li class="eventSelected" id="Code">Code Hunter</li>
-        <li class="eventSelected" id="Quiz">Quizophile</li>
         <li class="eventSelected" id="Bug">Beat The Bug</li>
         <li class="eventSelected" id="googler">Best Googler</li>
         <li class="eventSelected" id="Simon">Simon Game</li>
-        <li class="eventSelected" id="jumble">Jumble Keys</li>
     </ol>
 </div>
 </div>
@@ -1287,7 +1315,6 @@ textarea.input {
         <li class="eventSelected" id="musical">Musical Chair</li>
         <li class="eventSelected" id="pass">Pass the Wire</li>
         <li class="eventSelected" id="music">Music Voice</li>
-        <li class="eventSelected" id="booth">Selife Booth</li>
         <li class="eventSelected" id="lips">Lips Don't Lie</li>
     </ol>
 </div>
@@ -1300,7 +1327,6 @@ textarea.input {
         <li class="eventSelected" id="CPL">CPL</li>
         <li class="eventSelected" id="Chess">Chess</li>
         <li class="eventSelected" id="Badminton">Badminton</li>
-        <li class="eventSelected" id="Carrom">Carrom</li>
         <li class="eventSelected" id="Tug">Tug of War</li>
     </ol>
     
@@ -1312,7 +1338,6 @@ textarea.input {
     <h2>On Spot Events</h2>
     <ol>
         <li class="eventSelected" id="Rangoli">Rangoli</li>
-        <li class="eventSelected" id="tennis">Office tennis</li>
         <li class="eventSelected" id="jenga">Jenga</li>
         <li class="eventSelected" id="Plank">Plank</li>
         <li class="eventSelected" id="Ballon">Ballon cup</li>
