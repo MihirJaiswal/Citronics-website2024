@@ -366,7 +366,7 @@ button, h1, p {
 .payment {
   width: 850px;
   height: 690px;
-  background-color: #121826;
+  background-color: black;
   filter: drop-shadow(0 0 0.25rem #535c6a);
   border: 1px solid #C4B5FD;
   position: fixed;
@@ -889,6 +889,11 @@ textarea.input {
   display: none;
 }
 
+.event-details{
+  background: url(assests/eventbg.jpg); background-size:cover; background-position:center; background-repeat:no-repeat;
+}
+
+
 
 
 
@@ -1132,6 +1137,8 @@ textarea.input {
 .payment-container{
   background: url("assests/astrobg.png");
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .payment{
@@ -1142,15 +1149,7 @@ textarea.input {
   font-size:small;
   padding: 30px;
 }
-.event-description{
-  border: solid #535c6a 2px;
-  border-radius: 20px;
-  padding: 20px;
-  background: #6d7c92;
-  color: black;
-  font-size: 1rem;
-  font-weight: bold;
-}
+
 .rules{
   width: 98%;
   height:98%;
@@ -1223,6 +1222,11 @@ textarea.input {
 .slider{
   width: 97%;
 }
+
+.event-details{
+  background-attachment: fixed;
+}
+
 }
 
 
@@ -1614,29 +1618,42 @@ textarea.input {
 
 </section>
 
-<div class="payment-container">
+<div class="payment-container bg-black">
 <div class="payment md:w-50% text-white border-solid border-2 border-gray-600 rounded-lg">
-  <div class="event-card">
-    <img src="assests/logo.png" alt="Event Image" class="mt-2 mx-auto">
-    <div class="event-details">
-      <img :src="isLoaded ? `${imageSrc}&w=1770&q=80` : `${imageSrc}&w=10&q=80`" :class="{ '[image-rendering:_auto]': isLoaded, '[image-rendering:_pixelated]': !isLoaded}"  x-intersect.full="isLoaded = true" class="h-40 mx-auto mt-4 mb-4 rounded-lg " id="event-image">
-      <div class="event-name text-purple-300 font-bold md:text-3xl text-xl text-center mt-4 mb-4">Event: <span class="text-xl md:text-3xl" id="event-name"> </span></div>
-      <div class="event-description text-gray-300 text-center mb-4 text-lg tracking-widest text-[30px]">
-        <span class="md:text-2xl md:mt-6 text-s break-words column mb-8" id="event-description"></span>
+  <div class="event-card flex flex-col md:flex-row justify-evenly bg-black">
+    
+    <div class="event-details flex flex-col justify-evenly items-center md:mr-10">
+      <img src="assests/logo.png" alt="Event Image" class="mt-2 w-64 md:max-w-xs border border-1 border-white p-4 mb-6">
+      <img :src="isLoaded ? `${imageSrc}&w=1770&q=80` : `${imageSrc}&w=10&q=80`" :class="{ '[image-rendering:_auto]': isLoaded, '[image-rendering:_pixelated]': !isLoaded}"  x-intersect.full="isLoaded = true" class=" w-64 p-0 mx-auto mt-4 mb-4 rounded-lg border border-2 border-gray-600" id="event-image" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
+      <div class="event-name text-purple-300 font-bold md:text-3xl text-center mb-8 -mt-2 bg-gray-900 p-4 rounded-xl border border-1 border-gray-600 opacity-90"> <span class="text-3xl" id="event-name"> </span></div>
+      <div class="event-description text-gray-300 text-center mb-4 text-lg  md:-mt-6 bg-gray-900 p-6 rounded-xl border border-1 border-gray-600 opacity-90">
+        <span class="md:text-2xl mt-6 text-s column mb-8 font-semibold " id="event-description"></span>
       </div>
-      <div class="flex items-center md:flex md:flex-row md:mt-12 justify-between mt-4 mb-4 md:mb-2 text-gray-300 tracking-widest">
-      <div class="prize-money text-s md:text-lg">Prize: <span class="text-purple-300" id="prize-money"></span></div>
-      <div class="participation-fees text-s md:text-lg">Entry Fees: <span class="text-purple-300" id="participation-fees"></span></div>
     </div>
-    <div class="flex items-center md:flex md:flex-row justify-between mt-4 md:mt-2 mb-4 text-gray-300 tracking-widest">
-      <div class="event-date text-s md:text-lg">Event Head: <span class="text-purple-300" id="event-date"></span></div>
-      <div class="event-time text-s md:text-lg"><button class="text-white font-bold font-bold " id="rulebtn"> Rules <i class="fa-solid fa-circle-info"></i> </button></div>
-    </div>
-    <div class="flex justify-center">
-    <button class="w-40 bg-purple-300 hover:bg-purple-400 text-gray-800 font-bold font-bold py-2 px-4 rounded-lg" id="registerbtn" onclick="showModal()">Register</button>
+
+    <div class="hidden md:flex border border-1 border-gray-600 h-full p-0 m-0" style="height:667px; margin: 0; padding: 0;"></div>
+
+    <div class=" md:w-1/4 flex flex-col justify-between items-center md:ml-12 bg-black" style="background: url(assests/bgimg3.jpg); background-size: cover;">
+      
+      <ul class="flex flex-col px-8 md:px-4 py-2 mt-10 md:mt-20 bg-gray-900 rounded-xl border border-1 border-gray-600">
+      <li><div class="prize-money text-base text-gray-400 md:text-lg my-2 font-semibold">Prize Mon: <span class="text-purple-300" id="prize-money"> </span></div></li>
+      <li><div class="participation-fees text-gray-400 text-base md:text-lg font-semibold my-2">Entry Fees: <span class="text-purple-300" id="participation-fees"> </span></div></li>
+      <li> <div class="event-date text-base text-gray-400 md:text-lg font-semibold my-2">Event Head: <span class="text-purple-300" id="event-date"> Name</span></div></li>
+      <li> <div class="event-date text-base text-gray-400 md:text-lg font-semibold my-2">Event Date: <span class="text-purple-300" id="event-date"> Date</span></div></li>
+      <li> <div class="event-date text-base text-gray-400 md:text-lg font-semibold my-2">Event Time: <span class="text-purple-300" id="event-time"> Time</span></div></li>
+      <li> <div class="event-date text-base text-gray-400 md:text-lg font-semibold my-2">Event Venue: <span class="text-purple-300" id="event-venue"> CDGI</span></div></li>
+     </ul>
+
+  
+    
+    <div class="flex justify-between items-center pt-10 md:p-10">
+      <div class="event-time text-s md:text-lg bg-black py-2 border border-2 border-gray-100"><button class="w-28 text-white font-bold font-bold text-center" id="rulebtn"> Rules <i class="fa-solid fa-circle-info"></i> </button></div>
+    <button class="w-28 bg-purple-500 hover:bg-purple-800 text-gray-200 font-bold font-bold py-2 px-2 mx-4 border border-2 border-gray-100" id="registerbtn">Register</button>
       
     </div>
+    
     </div>
+    
   </div>
   <span class="close">X</span>
 </div>
