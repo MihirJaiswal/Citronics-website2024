@@ -366,7 +366,9 @@ button, h1, p {
 .payment {
   width: 850px;
   height: 690px;
-  background-color: #121826;
+  background: #121826 url(assests/bgimg5.jpg);
+  background-position: bottom;
+  background-repeat: repeat;
   filter: drop-shadow(0 0 0.25rem #535c6a);
   border: 1px solid #C4B5FD;
   position: fixed;
@@ -377,7 +379,7 @@ button, h1, p {
   border-radius: 5%;
   margin: auto;
   padding: 10px 50px;
-  display: none;
+  display: flex;
   flex-direction: column;
   -webkit-box-shadow: 0px 0px 26px -3px rgba(0, 0, 0, 0.8);
   box-shadow: 0px 0px 26px -3px rgba(0, 0, 0, 0.8);
@@ -1617,7 +1619,7 @@ textarea.input {
 <div class="payment-container">
 <div class="payment md:w-50% text-white border-solid border-2 border-gray-600 rounded-lg">
   <div class="event-card">
-    <img src="assests/logo.png" alt="Event Image" class="mt-2 mx-auto">
+    <img src="assests/logo.png" alt="Event Image" class="mt-4 bg-gray-900 mx-auto border border-1 border-white ">
     <div class="event-details">
       <img :src="isLoaded ? `${imageSrc}&w=1770&q=80` : `${imageSrc}&w=10&q=80`" :class="{ '[image-rendering:_auto]': isLoaded, '[image-rendering:_pixelated]': !isLoaded}"  x-intersect.full="isLoaded = true" class="h-40 mx-auto mt-4 mb-4 rounded-lg " id="event-image">
       <div class="event-name text-purple-300 font-bold md:text-3xl text-xl text-center mt-4 mb-4">Event: <span class="text-xl md:text-3xl" id="event-name"> </span></div>
