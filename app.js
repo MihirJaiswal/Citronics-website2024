@@ -191,6 +191,39 @@ closeregister.addEventListener("click", () => {
   register.style.display = "none";
 });
 
+
+const control = document.querySelector("#control");
+const map = document.querySelector("#map");
+const tlforbtn = document.querySelector("#tlforbtn");
+const controlbtn = document.querySelector("#controlbtn");
+const mapbtn = document.querySelector("#mapbtn");
+
+map.addEventListener("click", () => {
+  canvas.style.display = "none";
+  tlforbtn.style.display = "flex";
+  mapbtn.style.color = "#C0A2E4";
+  controlbtn.style.color = "#6E7683";
+  map.style.filter = "drop-shadow(0 0 0.25rem #5a6676)";
+  control.style.filter = "drop-shadow(0 0 0.25rem #24282c)";
+});
+
+control.addEventListener("click", () => {
+  canvas.style.display = "flex";
+  tlforbtn.style.display = "none";
+  controlbtn.style.color = "#C0A2E4";
+  mapbtn.style.color = "#6E7683";
+  control.style.filter = "drop-shadow(0 0 0.25rem #5a6676)";
+  map.style.filter = "drop-shadow(0 0 0.25rem #24282c)";
+});
+
+
+
+
+
+
+
+
+
 let eventname = document.querySelector("#event-name")
 let eventdescription = document.querySelector("#event-description")
 let prizeMoney = document.querySelector("#prize-money")

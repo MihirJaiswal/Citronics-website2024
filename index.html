@@ -1750,7 +1750,7 @@ textarea.input {
 <div class="separator-line1 md:mb-16"></div>
  <!-- timeline section section -->
  <div id="particles4-js" class="absolute w-full z-0"></div>
- <section class="bg-gray-dark px-6 notv mb-2 md:mt-20 md:mb-16">
+ <section class="bg-gray-dark px-6 notv mb-2 md:mt-20 md:mb-10">
   <div style="top: -10px; filter: drop-shadow(0 0 0.25rem #4B5563);" class="relative z-0">
     <div
       class="bg-gray-800 border-solid border-2 border-gray-600 rounded-lg md:flex md:mx-auto md:divide-x md:divide-gray-600"
@@ -1766,10 +1766,24 @@ textarea.input {
     </p -->
   </div>
 </section>
-<div class="hidden md:flex justify-center w-full md:mt-8 md:mb-16 align-center z-20" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
+<div>
+  <div class="hidden md:flex justify-center z-200 mb-10">
+   <div class="flex flex">
+    <div class="flex">
+      <button class="w-64 h-16 rounded-lg bg-gray-800 text-white font-bold border border-2 border-gray-600 mr-2" id="control" style="filter: drop-shadow(0 0 0.25rem #5a6676);"><span class="text-purple-300 font-bold text-2xl" id="controlbtn">Control</span></button>
+      <button class="w-64 h-16 rounded-lg bg-gray-800 text-white font-bold border border-2 border-gray-600 ml-2" id="map" style="filter: drop-shadow(0 0 0.25rem #24282c);"><span class="text-gray-400 font-bold text-2xl" id="mapbtn">Map</span></button>
+    </div>
+   </div> 
+  </div>
+
+<div class="hidden md:flex justify-center w-full md:mt-8 md:mb-16 align-center z-20" id="canvas" style="filter: drop-shadow(0 0 0.25rem #4B5563);">
   <canvas class="border-2 border-gray-600 rounded-lg"></canvas>
   </div>
 
+  <div id="tlforbtn" class="hidden">
+    <div><h1 class="text-purple-300 font-bold text-5xl text-center ">coming soon....</h1></div>
+  </div>
+</div>
 
 <!-- timeline phone -->
 <div class="timeline-container py-10 px-4">
